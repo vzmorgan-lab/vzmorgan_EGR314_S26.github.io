@@ -17,7 +17,7 @@ for<br>
 ## Introduction
 
 * **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
-* My name s Vanessa and I am majoring in Robotics Engineering.
+* My name is Vanessa and I am majoring in Robotics Engineering.
 
 ### Project Summary
 
