@@ -3,7 +3,9 @@ title: Module's Requirements
 ---
 
 ## Module Requirements
-The following sections document the requirements that the this module need to fulfills to provide reliable wireless communication between the Subterraniann Rover and the remote operator, enabling command control, telemetry data transmission, and integration with the rover’s main control system.
+The following sections document the requirements that the this module need to fulfills to allow the Subterranian rover to send and receive commands and sensor data over Wi-Fi.
+
+This table lists the key requirements that the wireless module must meet to ensure reliable communication, data transmission, and integration with the Subterranian Rover system.
 
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
