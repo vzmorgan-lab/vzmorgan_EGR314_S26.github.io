@@ -6,20 +6,13 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+The wireless block shows how the Subterranian Rover will communicate with the operator or the remote. It represents the wireless module, its interface to the microcontroller, and the flow of data for sending sensor readings and receiving control commands. 
 
+This is a rough draft of what I believe the diagram should be but we will continue to make changes throughout and discuss more with my teammates. 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Block Diagram 
 
-![Example of Indivial Block diagram ]
+The diagram shown below is a rough draft of the wireless connection for the Subterranian Rover.  
+
 <img width="1091" height="851" alt="WirelessConnection drawio" src="https://github.com/user-attachments/assets/070ebfd4-8d57-41fc-b181-c98028b43782" />
