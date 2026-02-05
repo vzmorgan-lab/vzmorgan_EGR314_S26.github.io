@@ -7,7 +7,7 @@ tags:
 
 ## Overview
 
-The wireless block shows how the Subterranian Rover will communicate with the operator or the remote. It represents the wireless module, its interface to the microcontroller, and the flow of data for sending sensor readings and receiving control commands. 
+The wireless connection block diagram shows how the Subterranian Rover will communicate with the operator or the remote. It represents the wireless module, its interface to the microcontroller, and the flow of data for sending sensor readings and receiving control commands. 
 
 This is a rough draft of what I believe the diagram should be but we will continue to make changes throughout and discuss more with my teammates. 
 
