@@ -2,11 +2,11 @@
 title: Module's Selected Major Components
 ---
 
-### Module's Selected Major Components
+# Module's Selected Major Components
 
 The final major components chosen to establish dependable wireless connection for the subsurface rover are described in the following sections. These parts meet the embedded system's power and surface-mount restrictions while allowing WiFi-based data transfer between the rover and the surface station.
 
-# Power Management
+### Power Management
 
 **3.3V Switching Voltage Regulator**
 
@@ -28,7 +28,7 @@ The final major components chosen to establish dependable wireless connection fo
 
 For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
 
-# Sensor
+### Sensor
 
 **Digital Temperature Sensor**
 
@@ -50,7 +50,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 
 For more details, review the [Appendix-Component Selection Process-Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
 
-# Wifi + Bluetooth
+### Wifi + Bluetooth
 
 **Wifi + Bluetooth Module**
 
