@@ -6,6 +6,8 @@ title: Module's Selected Major Components
 
 The final major components chosen to establish dependable wireless connection for the subsurface rover are described in the following sections. These parts meet the embedded system's power and surface-mount restrictions while allowing WiFi-based data transfer between the rover and the surface station.
 
+### Power Management
+
 **3.3V Switching Voltage Regulator**
 
 1. TPS62162 Step-Down Buck Converter (Surface-Mount)
@@ -26,6 +28,8 @@ The final major components chosen to establish dependable wireless connection fo
 
 For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
 
+### Sensor
+
 **Digital Temperature Sensor**
 
 2. TC74A0-3.3VCT (I2C Temperature Sensor, Surface-Mount)
@@ -45,6 +49,8 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 **Rationale:** To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.
 
 For more details, review the [Appendix-Component Selection Process-Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
+
+### Wifi + Bluetooth
 
 **Wifi + Bluetooth Module**
 
