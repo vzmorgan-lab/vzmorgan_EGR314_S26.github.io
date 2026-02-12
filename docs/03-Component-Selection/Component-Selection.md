@@ -24,7 +24,7 @@ The final major components chosen to establish dependable wireless connection fo
 
 **Rationale:** During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.
 
-For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management)
+For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
 
 **Digital Temperature Sensor**
 
