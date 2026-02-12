@@ -24,7 +24,7 @@ The final major components chosen to establish dependable wireless connection fo
 
 **Rationale:** During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.
 
-For more details, review the [Appendix-Component Selection Process-Power Management](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
+For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/)
 
 **Digital Temperature Sensor**
 
@@ -33,7 +33,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
     ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg)
 
     * $1/each
-    * [link to product]([http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=22289277771&gbraid=0AAAAADrbLlhDBa9FUIBwdcd7VYLPN3OB6&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECtTMQsLWFRmIdZ15_uIujRWbpkOhHiUt6Rx7rgtrCE274AA2dsC8gaApvJEALw_wcB))
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=22289277771&gbraid=0AAAAADrbLlhDBa9FUIBwdcd7VYLPN3OB6&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECtTMQsLWFRmIdZ15_uIujRWbpkOhHiUt6Rx7rgtrCE274AA2dsC8gaApvJEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -44,7 +44,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 
 **Rationale:** To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.
 
-For more details, review the [Appendix-Component Selection Process-Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
+For more details, review the [Appendix-Component Selection Process-Sensor](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
 
 **Wifi + Bluetooth Module**
 
