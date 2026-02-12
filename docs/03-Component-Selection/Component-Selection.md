@@ -44,7 +44,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 
 **Rationale:** To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.
 
-For more details, review the [Appendix-Component Selection Process-Sensor](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
+For more details, review the [Appendix-Component Selection Process-Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
 
 **Wifi + Bluetooth Module**
 
@@ -64,4 +64,4 @@ For more details, review the [Appendix-Component Selection Process-Sensor](https
 
 **Rationale:** Because it combines Bluetooth and fast WiFi connectivity into a single surface-mount module, the ESP32-S3-WROOM-1-N4 was chosen to cut down on PCB complexity and development time. Technical danger is decreased by the amount of community help and accessible libraries. For real-time telemetry and debugging in a Subterranian Rover application, communication dependability and performance are crucial, despite WiFi's increased power use.
 
-For more details, review the [Appendix-Component Selection Process- Wifi+Bluetooth Module](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
+For more details, review the [Appendix-Component Selection Process- Wifi+Bluetooth Module](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module)
