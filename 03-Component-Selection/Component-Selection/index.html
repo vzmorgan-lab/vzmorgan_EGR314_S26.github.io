@@ -864,6 +864,7 @@
 </li>
 </ol>
 <p><strong>Rationale:</strong> During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/">Appendix-Component Selection Process-Power Management</a></p>
 <p><strong>Digital Temperature Sensor</strong></p>
 <ol>
 <li>
@@ -902,6 +903,7 @@
 </li>
 </ol>
 <p><strong>Rationale:</strong> To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/">Appendix-Component Selection Process-Sensor</a></p>
 <p><strong>Wifi + Bluetooth Module</strong></p>
 <ol>
 <li>
@@ -940,6 +942,7 @@
 </li>
 </ol>
 <p><strong>Rationale:</strong> Because it combines Bluetooth and fast WiFi connectivity into a single surface-mount module, the ESP32-S3-WROOM-1-N4 was chosen to cut down on PCB complexity and development time. Technical danger is decreased by the amount of community help and accessible libraries. For real-time telemetry and debugging in a Subterranian Rover application, communication dependability and performance are crucial, despite WiFi's increased power use.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/">Appendix-Component Selection Process- Wifi+Bluetooth Module</a></p>
 
 
 
