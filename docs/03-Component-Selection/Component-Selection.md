@@ -28,7 +28,7 @@ The final major components chosen to establish dependable wireless connection fo
 
 2. TC74A0-3.3VCT (I2C Temperature Sensor, Surface-Mount)
 
-    ![]([image1.png](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg))
+    ![]((https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg))
 
     * $1/each
     * [link to product]([http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=22289277771&gbraid=0AAAAADrbLlhDBa9FUIBwdcd7VYLPN3OB6&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECtTMQsLWFRmIdZ15_uIujRWbpkOhHiUt6Rx7rgtrCE274AA2dsC8gaApvJEALw_wcB))
