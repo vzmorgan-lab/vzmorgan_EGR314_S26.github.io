@@ -24,6 +24,8 @@ The final major components chosen to establish dependable wireless connection fo
 
 **Rationale:** During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.
 
+For more details, review the [Appendix-Component Selection Process-Power Management](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
+
 **Digital Temperature Sensor**
 
 2. TC74A0-3.3VCT (I2C Temperature Sensor, Surface-Mount)
@@ -41,6 +43,8 @@ The final major components chosen to establish dependable wireless connection fo
     | Small surface-mount footprint             |
 
 **Rationale:** To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.
+
+For more details, review the [Appendix-Component Selection Process-Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
 
 **Wifi + Bluetooth Module**
 
@@ -60,3 +64,4 @@ The final major components chosen to establish dependable wireless connection fo
 
 **Rationale:** Because it combines Bluetooth and fast WiFi connectivity into a single surface-mount module, the ESP32-S3-WROOM-1-N4 was chosen to cut down on PCB complexity and development time. Technical danger is decreased by the amount of community help and accessible libraries. For real-time telemetry and debugging in a Subterranian Rover application, communication dependability and performance are crucial, despite WiFi's increased power use.
 
+For more details, review the [Appendix-Component Selection Process- Wifi+Bluetooth Module](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/)
