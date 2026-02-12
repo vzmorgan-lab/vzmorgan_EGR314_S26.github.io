@@ -2,7 +2,7 @@
 title: Module's Selected Major Components
 ---
 
-# Module's Selected Major Components
+## Module's Selected Major Components
 
 The final major components chosen to establish dependable wireless connection for the subsurface rover are described in the following sections. These parts meet the embedded system's power and surface-mount restrictions while allowing WiFi-based data transfer between the rover and the surface station.
 
