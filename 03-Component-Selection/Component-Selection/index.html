@@ -600,10 +600,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Selected Major Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
@@ -611,8 +610,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#sensor" class="md-nav__link">
     <span class="md-ellipsis">
       Sensor
@@ -620,18 +619,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#wifi-bluetooth" class="md-nav__link">
     <span class="md-ellipsis">
       Wifi + Bluetooth
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -830,10 +824,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Module's Selected Major Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-management" class="md-nav__link">
     <span class="md-ellipsis">
       Power Management
@@ -841,8 +834,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#sensor" class="md-nav__link">
     <span class="md-ellipsis">
       Sensor
@@ -850,18 +843,13 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#wifi-bluetooth" class="md-nav__link">
     <span class="md-ellipsis">
       Wifi + Bluetooth
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -888,11 +876,9 @@
   
 
 
-  <h1>Module's Selected Major Components</h1>
-
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The final major components chosen to establish dependable wireless connection for the subsurface rover are described in the following sections. These parts meet the embedded system's power and surface-mount restrictions while allowing WiFi-based data transfer between the rover and the surface station.</p>
-<h3 id="power-management">Power Management</h3>
+<h1 id="power-management">Power Management</h1>
 <p><strong>3.3V Switching Voltage Regulator</strong></p>
 <ol>
 <li>
@@ -932,7 +918,7 @@
 </ol>
 <p><strong>Rationale:</strong> During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">Appendix-Component Selection Process-Power Management</a> </p>
-<h3 id="sensor">Sensor</h3>
+<h1 id="sensor">Sensor</h1>
 <p><strong>Digital Temperature Sensor</strong></p>
 <ol>
 <li>
@@ -972,7 +958,7 @@
 </ol>
 <p><strong>Rationale:</strong> To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.</p>
 <p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor">Appendix-Component Selection Process-Sensor</a></p>
-<h3 id="wifi-bluetooth">Wifi + Bluetooth</h3>
+<h1 id="wifi-bluetooth">Wifi + Bluetooth</h1>
 <p><strong>Wifi + Bluetooth Module</strong></p>
 <ol>
 <li>
