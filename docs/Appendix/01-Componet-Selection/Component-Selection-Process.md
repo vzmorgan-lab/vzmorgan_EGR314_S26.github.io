@@ -14,7 +14,7 @@ title: Appendix - Module's Major Components Selection Process
 
 (**remove this note/placeholder**: if applicable, this is where your go through the sensor selection process, otherwise, remove this section.)
 
-### Actuator
+### Wifi + Bluetooth Module
 
 (**remove this note/placeholder**: if applicable, this is where your go through the motor selection process which includes both the driver and motor, otherwise, remove this section.)
 
