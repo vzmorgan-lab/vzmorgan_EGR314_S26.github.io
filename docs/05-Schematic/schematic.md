@@ -8,10 +8,9 @@ This schematic is designed to support a small wireless embedded system built aro
 
 
 ![schematic]<img width="2000" height="1414" alt="WirelessConnection_1 (2)" src="https://github.com/user-attachments/assets/9d0b308e-797e-4c75-ba1c-eccddc97cd8c" />
-{style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+{style width:"350" height:"300;"} Wireless Connection Schematic
 
 
-## Resouces
+## Resources
 
-The schematic as a PDF download is available [*Here*](file:///C:/Users/vm935/Downloads/Schematic.pdf "Wireless Connection Schematic"), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
+The schematic as a PDF download is available [*Here*](file:///C:/Users/vm935/Downloads/Schematic.pdf), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
