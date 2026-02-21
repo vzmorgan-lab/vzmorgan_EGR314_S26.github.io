@@ -13,4 +13,4 @@ This schematic is designed to support a small wireless embedded system built aro
 
 ## Resources
 
-The schematic as a PDF download is available [*Here*]([WirelessConnection_1.pdf](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/aca8b3f8bd546c58679ab353f1180423cc8f57d3/WirelessConnection_1.pdf)), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
+The schematic as a PDF download is available [*Here*](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/aca8b3f8bd546c58679ab353f1180423cc8f57d3/WirelessConnection_1.pdf), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
