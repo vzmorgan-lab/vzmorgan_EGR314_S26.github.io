@@ -8,7 +8,7 @@ This schematic is designed to support a small wireless embedded system built aro
 
 
 <img width="2000" height="1414" alt="WirelessConnection_1 (2)" src="https://github.com/user-attachments/assets/9d0b308e-797e-4c75-ba1c-eccddc97cd8c" />
-# Wireless Connection Schematic
+## Wireless Connection Schematic
 
 
 ## Resources
