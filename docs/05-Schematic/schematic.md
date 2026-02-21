@@ -14,4 +14,4 @@ This schematic is designed to support a small wireless embedded system built aro
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](file:///C:/Users/vm935/Downloads/Schematic.pdf "Wireless Connection Schematic"), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
+The schematic as a PDF download is available [*Here*](file:///C:/Users/vm935/Downloads/Schematic.pdf "Wireless Connection Schematic"), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
