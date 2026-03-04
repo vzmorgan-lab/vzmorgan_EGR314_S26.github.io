@@ -54,7 +54,7 @@ For more details, review the [Appendix-Component Selection Process-Sensor](https
 
 **Wifi + Bluetooth Module**
 
-1. ESP32-S3-WROOM-1-N4 (Surface-MOunt RF Module)
+1. ESP32-S3-WROOM-1-N4 (Surface-Mount RF Module)
 
     ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/773/504/MFG_Attachment-2-ESP32-S3-WROOM-1_sml.jpg)
 
