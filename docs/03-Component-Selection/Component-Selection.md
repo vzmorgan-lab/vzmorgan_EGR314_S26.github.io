@@ -29,27 +29,27 @@ The final major components chosen to establish dependable wireless communication
 
 ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/235/273/MFG_5272%7ESOT89-3%7E%7E3_sml%28200x200%29.jpg)
 
-$0.50 / each
-[link to product](https://www.digikey.com/en/products/detail/evvo/AMS1117-3-3S/24370078?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI2IhmWDFCgX9ksx3NhxcHgdUPOD4v7ir565-CsROMOD6mb5j4FEIEaAlsTEALw_wcB)
+   * $0.50 / each
+   * [link to product](https://www.digikey.com/en/products/detail/evvo/AMS1117-3-3S/24370078?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI2IhmWDFCgX9ksx3NhxcHgdUPOD4v7ir565-CsROMOD6mb5j4FEIEaAlsTEALw_wcB)
 
-|**Pros**                           |**Cons**                               |
-|-----------------------------------|---------------------------------------|
-| Very simple design	              | Low efficiency                        |
-| Requires few external components  | Generates significant heat            |
-| Low cost	                        | Not ideal for battery-powered systems |
+   |**Pros**                           |**Cons**                               |
+   |-----------------------------------|---------------------------------------|
+   | Very simple design	              | Low efficiency                        |
+   | Requires few external components  | Generates significant heat            |
+   | Low cost	                        | Not ideal for battery-powered systems |
 
 ### TPS62162 Buck Switching Regulator
 
 ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/108/920/296%7E4208210%7EDSG%7E8_sml.jpg)
 
-$2.30 / each
-[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS62162QDSGTQ1/8106150?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLx5XmkVX2FrJnzuIlevHkoFduS_uO5RTDUoJW4m4uVXjfv4GV_AdMaAkc4EALw_wcB)
+   * $2.30 / each
+   * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS62162QDSGTQ1/8106150?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLx5XmkVX2FrJnzuIlevHkoFduS_uO5RTDUoJW4m4uVXjfv4GV_AdMaAkc4EALw_wcB)
 
-|**Pros**                           |**Cons**                                 |
-|-----------------------------------|-----------------------------------------|
-| High efficiency	                  | Slightly higher cost                    |
-| Good load transient response      | Requires additional external components |
-| Compact surface mount package	   |
+   |**Pros**                           |**Cons**                                 |
+   |-----------------------------------|-----------------------------------------|
+   | High efficiency	                  | Slightly higher cost                    |
+   | Good load transient response      | Requires additional external components |
+   | Compact surface mount package	   |
 
  **Final Choice:** LM3671MF-3.3/NOPB
 
@@ -68,10 +68,10 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
    * $1.00 / each
    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI4xecToUI6zJUDKrKnRQKlIwXQnsmLM6Yfcl943HMkYQdVr3-PV1UaAg2TEALw_wcB)
 
-|**Pros**               |**Cons**                   |
-|-----------------------|---------------------------|
-| Simple I2C interface  | Limited resolution        |
-| Direct 3.3V operation | Requires pull-up resistors|
+   |**Pros**               |**Cons**                   |
+   |-----------------------|---------------------------|
+   | Simple I2C interface  | Limited resolution        |
+   | Direct 3.3V operation | Requires pull-up resistors|
 
 2. LM35DZ/NOPB
 
@@ -80,11 +80,11 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
    * $1.67/each
    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM35DZ-NOPB/32489)
 
-|**Pros**             |**Cons**              |
-|---------------------|----------------------|
-| Simple analog output|	Requires ADC         |
-| Good accuracy	    | More noise sensitive |
-| Easy interface	    | Requires calibration |
+   |**Pros**             |**Cons**              |
+   |---------------------|----------------------|
+   | Simple analog output|	Requires ADC         |
+   | Good accuracy	    | More noise sensitive |
+   | Easy interface	    | Requires calibration |
 
 **Final Choice:** TC74A0-3.3VCT
 
@@ -100,13 +100,13 @@ For more details, review the [Appendix-Component Selection Process- Sensor](http
 
     ![](https://www.18650batterystore.com/cdn/shop/files/52q45634564526.jpg?v=1738986702&width=900)
 
-$4.99 / each
-[link to product](https://www.18650batterystore.com/products/samsung-25r-18650)
+   * $4.99 / each
+   * [link to product](https://www.18650batterystore.com/products/samsung-25r-18650)
 
-|**Pros**             |**Cons**                    |
-|---------------------|----------------------------|
-| High energy density | Requires charging circuitry|
-| Rechargeable	       | Safety considerations      |
+   |**Pros**             |**Cons**                    |
+   |---------------------|----------------------------|
+   | High energy density | Requires charging circuitry|
+   | Rechargeable	       | Safety considerations      |
 
 2. LiPo Battery Pack (3.7V)
 
@@ -115,11 +115,11 @@ $4.99 / each
    * $14.95/each
    * [Link of Product](https://www.adafruit.com/product/328?srsltid=AfmBOooP7JS0PpX0v6VQ8-9dQ1CtpmQ5a4_LUi1XBD5sqMhyAZ_wtQyy)
 
-|**Pros**            |**Cons**                  |
-|--------------------|--------------------------|
-| Lightweight	      | Shorter lifespan         |
-| Rechargeable       | Requires protection circuitry|
-| Compact            | Higher cost              | 
+   |**Pros**            |**Cons**                  |
+   |--------------------|--------------------------|
+   | Lightweight	      | Shorter lifespan         |
+   | Rechargeable       | Requires protection circuitry|
+   | Compact            | Higher cost              | 
 
 **Final Choice:** 18650 Lithium-Ion Battery
 
@@ -152,24 +152,24 @@ For more details, review the [Appendix-Component Selection Process- Power Source
    * $7.50/each
    * [Link of Product](https://www.sparkfun.com/wifi-module-esp8266-4mb-flash.html)
 
-|**Pros**          |**Cons**                 |
-|------------------|-------------------------|
-| Low cost	       | No Bluetooth            |
-| Large community support | Lower processing power|
-| Simple WiFi connectivity |	Fewer peripherals|
+   |**Pros**          |**Cons**                 |
+   |------------------|-------------------------|
+   | Low cost	       | No Bluetooth            |
+   | Large community support | Lower processing power|
+   | Simple WiFi connectivity |	Fewer peripherals|
 
 3. NRF52840 Module
 
-![](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/2/1/21605-_WRL-_01.jpg)
+   ![](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/2/1/21605-_WRL-_01.jpg)
 
    * $7.00 / each
    * [Link to Product](https://www.sparkfun.com/nordic-nrf52840-ble-module-mdbt50q-1mv2.html)
 
-|**Pros**            |**Cons**            |
-|--------------------|--------------------|
-| Low power wireless	| Higher cost        |
-| Bluetooth support	| No integrated WiFi |
-| Good documentation | Smaller ecosystem  |
+   |**Pros**            |**Cons**            |
+   |--------------------|--------------------|
+   | Low power wireless	| Higher cost        |
+   | Bluetooth support	| No integrated WiFi |
+   | Good documentation | Smaller ecosystem  |
 
 **Final Choice:** ESP32-S3-WROOM-1-N4
 
