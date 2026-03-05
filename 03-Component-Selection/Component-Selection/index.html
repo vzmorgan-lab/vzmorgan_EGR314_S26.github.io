@@ -613,9 +613,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#user-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
+      User Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Input
     </span>
   </a>
   
@@ -625,6 +634,15 @@
   <a href="#wifi-bluetooth" class="md-nav__link">
     <span class="md-ellipsis">
       Wifi + Bluetooth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Interface
     </span>
   </a>
   
@@ -843,9 +861,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#user-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
+      User Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Input
     </span>
   </a>
   
@@ -855,6 +882,15 @@
   <a href="#wifi-bluetooth" class="md-nav__link">
     <span class="md-ellipsis">
       Wifi + Bluetooth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Interface
     </span>
   </a>
   
@@ -891,12 +927,13 @@
   <h1>Module's Selected Major Components</h1>
 
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
-<p>The final major components chosen to establish dependable wireless connection for the subsurface rover are described in the following sections. These parts meet the embedded system's power and surface-mount restrictions while allowing WiFi-based data transfer between the rover and the surface station.</p>
+<p>The final major components chosen to establish dependable wireless communication for the Subterranian Rover are described in the following sections. These components meet the embedded system’s surface-mount design requirements and power constraints while enabling reliable WiFi communication between the rover electronics and the external control station. The selected components support wireless data transmission using MQTT over WiFi, provide system power regulation, and include user interface indicators for system status and diagnostics.</p>
 <h3 id="power-management">Power Management</h3>
 <p><strong>3.3V Switching Voltage Regulator</strong></p>
 <ol>
 <li>
-<p>Buck Switching Regulator IC Positive Fixed 3.3V (Surface-Mount)</p>
+<p>Buck Switching Regulator IC Positive Fixed 3.3V (Surface-Mount)
+   LM3671MF-3.3/NOPB</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img width=&quot;200&quot; height=&quot;200&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/1558fada-5f01-4d3a-b844-272d979f7099&quot; /" data-desc-position="bottom"><img alt="" src="img width=&quot;200&quot; height=&quot;200&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/1558fada-5f01-4d3a-b844-272d979f7099&quot; /"></a></p>
 <ul>
 <li>$1.98/each</li>
@@ -911,7 +948,7 @@
 </thead>
 <tbody>
 <tr>
-<td>High efficiency ( about greater than 90%) extends battery life</td>
+<td>High efficiency ( about greater than 90%) improves power efficiency and reduces heat generation</td>
 <td>Switching noise requires careful PCB layout</td>
 </tr>
 <tr>
@@ -930,16 +967,17 @@
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> During WiFi transmission, the ESP32 draws significant sudden currents that, if powered by a linear regulator, may result in voltage drop. For battery-powered operation, a switching buck converter was used to minimize heat loss, improve overall power efficiency, and offer a steady 3.3V rail under changing loads.</p>
+<p><strong>Rationale:</strong> During WiFi communication bursts, the ESP32 can draw short but significant current spikes. A linear regulator could experience voltage drop or excessive heat dissipation under these conditions. The LM3671MF-3.3/NOPB switching regulator was selected because it provides a stable and efficient 3.3V output, improves overall power efficiency, and supports dynamic current loads from wireless communication activities.</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">Appendix-Component Selection Process-Power Management</a> </p>
-<h3 id="sensor">Sensor</h3>
-<p><strong>Digital Temperature Sensor</strong></p>
+<h3 id="user-interface">User Interface</h3>
+<p><strong>Status Indicator LEDs</strong></p>
 <ol>
 <li>
-<p>TC74A0-3.3VCT (I2C Temperature Sensor, Surface-Mount)</p>
+<p>Surface-Mount LED Indicator
+   IN-P32ATB</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg"></a></p>
 <ul>
-<li>$1/each</li>
+<li>$0.15/each</li>
 <li><a href="https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=22289277771&amp;gbraid=0AAAAADrbLlhDBa9FUIBwdcd7VYLPN3OB6&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECtTMQsLWFRmIdZ15_uIujRWbpkOhHiUt6Rx7rgtrCE274AA2dsC8gaApvJEALw_wcB">link to product</a></li>
 </ul>
 <table>
@@ -951,27 +989,68 @@
 </thead>
 <tbody>
 <tr>
-<td>Simple I2C interface to ESP32</td>
-<td>It limits the temperature solution</td>
+<td>Compact surface-mount package</td>
+<td>Requires current-limiting resistor</td>
 </tr>
 <tr>
 <td>Low power comsumption</td>
-<td>Requires I2C pull-up resistors</td>
+<td>Limited brightness compared to larger LEDs</td>
 </tr>
 <tr>
-<td>Direct 3.3V operation</td>
-<td>It isn't sealed for harsh conditions/environment</td>
+<td>Easy integration with ESP32 GPIO pins</td>
+<td></td>
 </tr>
 <tr>
-<td>Small surface-mount footprint</td>
+<td>Provides visual system status indication</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> To keep an eye on the local thermal conditions close to the wireless electronics, the TC74 temperature sensor was chosen. System stability and RF performance might be impacted by temperature variations. Because of its low power consumption, 3.3V operation, and easy setup, the TC74 is a good choice for continuous monitoring in a small embedded system.</p>
-<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor">Appendix-Component Selection Process-Sensor</a></p>
+<p><strong>Rationale:</strong> Status LEDs were included to provide visual feedback about system operation, including power status, communication activity, and diagnostic signals. The IN-P32ATB LED offers a small footprint, low current consumption, and compatibility with 3.3V logic, making it suitable for embedded system indicators.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor">Appendix-Component Selection Process-User Interface</a></p>
+<h3 id="user-input">User Input</h3>
+<p><strong>Tactile Push Button Switch</strong></p>
+<ol>
+<li>
+<p>Surface-Mount Momentary Push Button
+   PTS636SM43SMTR LFS</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="img width=&quot;200&quot; height=&quot;200&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/f33dfd12-a93a-4857-9a74-1a6e3bc8c7f4&quot; /" data-desc-position="bottom"><img alt="" src="img width=&quot;200&quot; height=&quot;200&quot; alt=&quot;image&quot; src=&quot;https://github.com/user-attachments/assets/f33dfd12-a93a-4857-9a74-1a6e3bc8c7f4&quot; /"></a></p>
+<ul>
+<li>$0.40/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/c-k/PTS636SM43SMTR-LFS/10071723">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compact surface-mount design</td>
+<td>Requires pull-up or pull-down resistor</td>
+</tr>
+<tr>
+<td>Reliable tactile feedback</td>
+<td>Limited mechanical lifetime compared to larger switches</td>
+</tr>
+<tr>
+<td>Simple digital interface to ESP32 GPIO</td>
+<td></td>
+</tr>
+<tr>
+<td>Useful for testing and manual control input</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> The push button switch allows manual user interaction with the wireless subsystem, such as initiating test communication events or resetting system functions. The selected tactile switch provides a compact surface-mount footprint and reliable actuation, making it well suited for embedded electronics in a constrained rover environment.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module">Appendix-Component Selection Process- User Input</a></p>
 <h3 id="wifi-bluetooth">Wifi + Bluetooth</h3>
 <p><strong>Wifi + Bluetooth Module</strong></p>
 <ol>
@@ -991,7 +1070,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Integrated Wifi and Bluetooth LE</td>
+<td>Integrated Wifi and Bluetooth connectivity</td>
 <td>High current draw during wifi transmission</td>
 </tr>
 <tr>
@@ -999,19 +1078,50 @@
 <td>RF performance depends on antenna layout</td>
 </tr>
 <tr>
-<td>USB support simplifies programming and debugging</td>
+<td>Multiple GPIO pins for LEDs, sensors, and control</td>
 <td>Requires careful RF PCB layout</td>
 </tr>
 <tr>
-<td>FCC-certified module simplifies compliance</td>
+<td>Supports UART communication with rover controller</td>
 <td>More complex firmware than the simple radios</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> Because it combines Bluetooth and fast WiFi connectivity into a single surface-mount module, the ESP32-S3-WROOM-1-N4 was chosen to cut down on PCB complexity and development time. Technical danger is decreased by the amount of community help and accessible libraries. For real-time telemetry and debugging in a Subterranian Rover application, communication dependability and performance are crucial, despite WiFi's increased power use.</p>
+<p><strong>Rationale:</strong> The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi connectivity, processing capability, and multiple communication interfaces into a single surface-mount module, reducing PCB complexity. The module supports UART communication with the rover controller and WiFi communication with the MQTT server, allowing real-time telemetry transmission and command reception. Its extensive software ecosystem and development tools significantly reduce development risk.</p>
 <p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module">Appendix-Component Selection Process- Wifi+Bluetooth Module</a></p>
+<h3 id="communication-interface">Communication Interface</h3>
+<p><strong>Digital Serial Communication Connection</strong></p>
+<ol>
+<li>
+<p>Custom connector interface to rover controller/ laptop</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple and reliable serial communication</td>
+<td>Requires additional pins</td>
+</tr>
+<tr>
+<td>Compatible with both ESP32 and PIC microcontrollers</td>
+<td>Limited communication distance</td>
+</tr>
+<tr>
+<td>Low hardware complexity</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> UART was selected as the communication interface between the wireless subsystem and the rover controller board. This protocol is widely supported by embedded systems and provides simple bidirectional communication using only two signal lines (TX and RX). It is ideal for transmitting telemetry data and receiving control commands from other rover subsystems.</p>
+<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module">Appendix-Component Selection Process- Communication Interface</a></p>
 
 
 
