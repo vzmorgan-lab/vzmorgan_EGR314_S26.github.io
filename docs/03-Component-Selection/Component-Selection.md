@@ -25,52 +25,90 @@ The final major components chosen to establish dependable wireless communication
     | Wide input voltage range supports battery input | More complex than Linear regulators                        |
     | Surface-mount compatible |
 
-**Rationale:** During WiFi communication bursts, the ESP32 can draw short but significant current spikes. A linear regulator could experience voltage drop or excessive heat dissipation under these conditions. The LM3671MF-3.3/NOPB switching regulator was selected because it provides a stable and efficient 3.3V output, improves overall power efficiency, and supports dynamic current loads from wireless communication activities.
+2. AMS1117-3.3 Linear Regulator
+
+![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/002/141/970/MFG_AMS1117-3.3_sml.jpg)
+
+   * $0.60 / each
+   * [AMS1117-3.3 Linear Regulator](https://www.digikey.com/en/products/detail/umw/AMS1117-3-3/17635254)
+
+|**Pros**             |**Cons**                          |
+|Very simple circuit  | Low efficiency                   |
+|Low cost	          | Generates heat                   |
+|Minimal external components | Not ideal for battery-powered systems|
+
+## Final Choice: LM3671MF-3.3/NOPB
+
+**Rationale:** The LM3671MF-3.3 switching regulator was selected because it provides high efficiency, supports the peak current requirements of the ESP32 WiFi module, and operates well from a battery input. Although switching regulators require additional passive components, the improved power efficiency is important for extending battery life in the rover system.
 
 For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
 
-### User Interface
+### Sensor
 
-**Status Indicator LEDs**
+**Temperature Sensor**
 
-2. Surface-Mount LED Indicator
-   IN-P32ATB
+1. TC74A0-3.3VCT
 
-    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/200/422/393/IN-P32AT_sml.jpg)
+    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg)
 
-    * $0.15/each
-    * [link to product](https://www.digikey.com/en/products/detail/inolux/IN-P32ATB/7604878)
+   * $1.00 / each
+   * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI4xecToUI6zJUDKrKnRQKlIwXQnsmLM6Yfcl943HMkYQdVr3-PV1UaAg2TEALw_wcB)
 
-    | **Pros**                                  | **Cons**                                                         |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Compact surface-mount package             | Requires current-limiting resistor                               |
-    | Low power comsumption                     | Limited brightness compared to larger LEDs                       |
-    | Easy integration with ESP32 GPIO pins     |
-    | Provides visual system status indication  |
+|**Pros**               |**Cons**                   |
+|-----------------------|---------------------------|
+| Simple I2C interface  | Limited resolution        |
+| Direct 3.3V operation | Requires pull-up resistors|
 
-**Rationale:** Status LEDs were included to provide visual feedback about system operation, including power status, communication activity, and diagnostic signals. The IN-P32ATB LED offers a small footprint, low current consumption, and compatibility with 3.3V logic, making it suitable for embedded system indicators.
+2. LM35DZ/NOPB
 
-### User Input
+![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/201/567/296%7EZ03A%7E%7E3_sml%28200x200%29.jpg)
 
-**Tactile Push Button Switch**
+   * $1.67/each
+   * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM35DZ-NOPB/32489)
 
-1. Surface-Mount Momentary Push Button
-   PTS636SM43SMTR LFS
+|**Pros**             |**Cons**              |
+| Simple analog output|	Requires ADC         |
+| Good accuracy	    | More noise sensitive |
+| Easy interface	    | Requires calibration |
 
-    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/154/PTS636-Gull-Wing_sml.jpg)
+## Final Choice: TC74A0-3.3VCT
 
-    * $0.40/each
-    * [link to product](https://www.digikey.com/en/products/detail/c-k/PTS636SM43SMTR-LFS/10071723)
+**Rationale:** The TC74 sensor was selected because it provides simple I2C communication, operates directly from a 3.3V supply, and has low power consumption, making it well suited for monitoring thermal conditions near the wireless electronics.
 
-    | **Pros**                                  | **Cons**                                                         |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Compact surface-mount design              | Requires pull-up or pull-down resistor                           |
-    | Reliable tactile feedback | Limited mechanical lifetime compared to larger switches                          |
-    | Simple digital interface to ESP32 GPIO    | 
-    | Useful for testing and manual control input |
+### Power Source
 
-**Rationale:** The push button switch allows manual user interaction with the wireless subsystem, such as initiating test communication events or resetting system functions. The selected tactile switch provides a compact surface-mount footprint and reliable actuation, making it well suited for embedded electronics in a constrained rover environment.
-      
+**Battery**
+
+1. 18650 Lithium-Ion Battery
+
+    ![](https://www.18650batterystore.com/cdn/shop/files/52q45634564526.jpg?v=1738986702&width=900)
+
+$4.99 / each
+[link to product](https://www.18650batterystore.com/products/samsung-25r-18650)
+
+|**Pros**             |**Cons**                    |
+|---------------------|----------------------------|
+| High energy density | Requires charging circuitry|
+| Rechargeable	       | Safety considerations      |
+
+**Rationale:** The 18650 lithium-ion battery was selected because it provides high energy density and rechargeable operation, making it suitable for portable embedded systems such as the Subterranian Rover.
+
+2. LiPo Battery Pack (3.7V)
+
+   ![](https://cdn-shop.adafruit.com/970x728/328-06.jpg)
+
+   * $14.95
+   * [Link of Product](https://www.adafruit.com/product/328?srsltid=AfmBOooP7JS0PpX0v6VQ8-9dQ1CtpmQ5a4_LUi1XBD5sqMhyAZ_wtQyy)
+
+|**Pros**            |**Cons**                  |
+| Lightweight	      | Shorter lifespan         |
+| Rechargeable       | Requires protection circuitry|
+| Compact            | Higher cost              | 
+
+## Final Choice: 18650 Lithium-Ion Battery
+
+**Rationale:** The 18650 lithium-ion battery provides high energy density, rechargeable operation, and sufficient current capacity to support the ESP32 and other electronics. This makes it well suited for portable embedded systems such as the subterranean rover.
+
 ### Wifi + Bluetooth
 
 **Wifi + Bluetooth Module**
@@ -88,6 +126,32 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
     | Large software ecosystem and community support | RF performance depends on antenna layout                      |
     | Multiple GPIO pins for LEDs, sensors, and control | Requires careful RF PCB layout                             |
     | Supports UART communication with rover controller | More complex firmware than the simple radios               |
+
+2. ESP8266 (4MB Flash)
+   
+   ![](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/7/17146-WiFi_Module_-_ESP8266__4MB_-01.jpg)
+
+   * $7.50/each
+   * [Link of Product](https://www.sparkfun.com/wifi-module-esp8266-4mb-flash.html)
+
+|**Pros**          |**Cons**                 |
+| Low cost	       | No Bluetooth            |
+| Large community support | Lower processing power|
+| Simple WiFi connectivity |	Fewer peripherals|
+
+3. NRF52840 Module
+
+![](https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/2/1/21605-_WRL-_01.jpg)
+
+   * $7.00 / each
+   * [Link to Product](https://www.sparkfun.com/nordic-nrf52840-ble-module-mdbt50q-1mv2.html)
+
+|**Pros**            |**Cons**            |
+| Low power wireless	| Higher cost        |
+| Bluetooth support	| No integrated WiFi |
+| Good documentation | Smaller ecosystem  |
+
+## Final Choice: ESP32-S3-WROOM-1-N4
 
 **Rationale:** The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi connectivity, processing capability, and multiple communication interfaces into a single surface-mount module, reducing PCB complexity. The module supports UART communication with the rover controller and WiFi communication with the MQTT server, allowing real-time telemetry transmission and command reception. Its extensive software ecosystem and development tools significantly reduce development risk.
 
