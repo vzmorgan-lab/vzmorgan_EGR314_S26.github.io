@@ -7,9 +7,11 @@ title: Module Schematic
 This schematic is designed to support a small wireless embedded system built around the ESP32-WROOM-32. The ESP32 acts as the main controller, handling all processing, WiFi communication, and interaction with external devices. The circuit is powered by a regulated 3.3 V supply, which is distributed to the ESP32 and other components to ensure stable operation. Basic support components, such as a pull-up resistor on the enable pin and a decoupling capacitor, are included to keep the system running reliably. The design also provides simple connections, such as UART for programming and debugging, along with GPIO pins that can be used to connect sensors or other peripherals. Overall, the schematic brings together power, control, and communication into a single, easy-to-use system.
 
 ## Wireless Connection Schematics
-<img width="2000" height="1414" alt="WirelessConnection_1 (2)" src="https://github.com/user-attachments/assets/9d0b308e-797e-4c75-ba1c-eccddc97cd8c" />
+<img width="1063" height="742" alt="image" src="https://github.com/user-attachments/assets/5b937b1c-4e97-494d-b503-6648462e80e6" />
+
 
 
 ## Resources
 
-The schematic as a PDF download is available [*Here*](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/aca8b3f8bd546c58679ab353f1180423cc8f57d3/WirelessConnection_1.pdf), and the Zip folder of the project [WirelessConnection_1.zip](https://github.com/user-attachments/files/25455617/WirelessConnection_1-2026-02-20_210042.zip).
+The schematic as a PDF download is available [*Here*](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/main/WirelessConnection_1.pdf), and the Zip folder of the project [Wireless Connection Zip File](https://github.com/user-attachments/files/25776671/WirelessConnection.Zip.zip)
+).
