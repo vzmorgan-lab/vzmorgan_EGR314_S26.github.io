@@ -25,18 +25,31 @@ The final major components chosen to establish dependable wireless communication
     | Wide input voltage range supports battery input | More complex than Linear regulators                        |
     | Surface-mount compatible |
 
-2. AMS1117-3.3 Linear Regulator
+### AMS1117-3.3 Linear Regulator
 
-![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/002/141/970/MFG_AMS1117-3.3_sml.jpg)
+![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/235/273/MFG_5272%7ESOT89-3%7E%7E3_sml%28200x200%29.jpg)
 
-   * $0.60 / each
-   * [AMS1117-3.3 Linear Regulator](https://www.digikey.com/en/products/detail/umw/AMS1117-3-3/17635254)
+$0.50 / each
+[link to product](https://www.digikey.com/en/products/detail/evvo/AMS1117-3-3S/24370078?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI2IhmWDFCgX9ksx3NhxcHgdUPOD4v7ir565-CsROMOD6mb5j4FEIEaAlsTEALw_wcB)
 
-|**Pros**             |**Cons**                          |
-|---------------------|----------------------------------|
-|Very simple circuit  | Low efficiency                   |
-|Low cost	          | Generates heat                   |
-|Minimal external components | Not ideal for battery-powered systems|
+|**Pros**                           |**Cons**                               |
+|-----------------------------------|---------------------------------------|
+| Very simple design	              | Low efficiency                        |
+| Requires few external components  | Generates significant heat            |
+| Low cost	                        | Not ideal for battery-powered systems |
+
+### TPS62162 Buck Switching Regulator
+
+![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/108/920/296%7E4208210%7EDSG%7E8_sml.jpg)
+
+$2.30 / each
+[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS62162QDSGTQ1/8106150?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLx5XmkVX2FrJnzuIlevHkoFduS_uO5RTDUoJW4m4uVXjfv4GV_AdMaAkc4EALw_wcB)
+
+|**Pros**                           |**Cons**                                 |
+|-----------------------------------|-----------------------------------------|
+| High efficiency	                  | Slightly higher cost                    |
+| Good load transient response      | Requires additional external components |
+| Compact surface mount package	   |
 
  **Final Choice:** LM3671MF-3.3/NOPB
 
