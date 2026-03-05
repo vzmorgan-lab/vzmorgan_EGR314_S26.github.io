@@ -13,7 +13,7 @@ The final major components chosen to establish dependable wireless communication
 1. Buck Switching Regulator IC Positive Fixed 3.3V (Surface-Mount)
    LM3671MF-3.3/NOPB
 
-    ![](<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1558fada-5f01-4d3a-b844-272d979f7099" />)
+    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/756/409/296%7E4073253-4%7EDBV%7E5_sml.jpg)
 
     * $1.98/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576HVS-3-3-NOPB/363648)
@@ -36,10 +36,10 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 2. Surface-Mount LED Indicator
    IN-P32ATB
 
-    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg)
+    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/200/422/393/IN-P32AT_sml.jpg)
 
     * $0.15/each
-    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=22289277771&gbraid=0AAAAADrbLlhDBa9FUIBwdcd7VYLPN3OB6&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuECtTMQsLWFRmIdZ15_uIujRWbpkOhHiUt6Rx7rgtrCE274AA2dsC8gaApvJEALw_wcB)
+    * [link to product](https://www.digikey.com/en/products/detail/inolux/IN-P32ATB/7604878)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -59,7 +59,7 @@ For more details, review the [Appendix-Component Selection Process-User Interfac
 1. Surface-Mount Momentary Push Button
    PTS636SM43SMTR LFS
 
-    ![](<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f33dfd12-a93a-4857-9a74-1a6e3bc8c7f4" />)
+    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/154/PTS636-Gull-Wing_sml.jpg)
 
     * $0.40/each
     * [link to product](https://www.digikey.com/en/products/detail/c-k/PTS636SM43SMTR-LFS/10071723)
