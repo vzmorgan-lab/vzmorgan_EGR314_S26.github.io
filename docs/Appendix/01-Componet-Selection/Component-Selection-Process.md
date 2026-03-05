@@ -58,44 +58,6 @@ Option 1: LM3671MF-3.3/NOPB Switching Regulator
 # Rationale
 The LM3671MF-3.3 switching regulator was selected because it provides high power efficiency and stable voltage regulation for the ESP32 wireless module. WiFi communication can cause short bursts of high current demand, and the switching regulator can handle these loads without significant voltage drop or heat generation. This makes it ideal for a battery-powered embedded system such as the subterranean rover.
 
-# Sensor
-
-## Digital Temperature Sensor Options
-
-### TC74A0-3.3VCT Digital Temperature Sensor
-
-![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg)
-
-$1.00 / each
-[link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DKDDLrsjWwRMtZbUEAXxpQFr-3JsbeAibw74nSM7nxL7fNa2rCyds0aAnCREALw_wcB)
-
-|**Pros**                    |**Cons**                          |
-|----------------------------|----------------------------------|
-| Simple I2C communication	 | Limited temperature resolution   |
-| Direct 3.3V operation	     | Requires pull-up resistors       |
-| Low power consumption	     | Not sealed for harsh environments|
-| Small surface mount package|
-
-### MCP9808 High Accuracy Temperature Sensor
-
-![](https://www.microchip.com/_images/ics/medium-MCP9808-MSOP-8.png)
-
-$1.40 / each
-[link to product](https://www.microchipdirect.com/product/MCP9808T-E/MS)
-
-|**Pros**                            |**Cons**                       |
-|------------------------------------|-------------------------------|
-| Very high accuracy                 | Higher cost                   |
-| Wide temperature measurement range | More complex configuration    |
-| I2C communication                  |
-
-## Choice
-
-Option 1: TC74A0-3.3VCT Temperature Sensor
-
-# Rationale
-The TC74 temperature sensor was selected because it provides simple digital temperature measurement through the I2C interface while operating directly from a 3.3V supply. It consumes very little power and has a small surface-mount footprint, making it well suited for embedded monitoring of thermal conditions near the wireless electronics.
-
 # Wifi + Bluetooth Module
 
 ## Wireless Communication Module Options
