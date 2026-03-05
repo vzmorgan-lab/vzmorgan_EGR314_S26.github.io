@@ -33,6 +33,7 @@ The final major components chosen to establish dependable wireless communication
    * [AMS1117-3.3 Linear Regulator](https://www.digikey.com/en/products/detail/umw/AMS1117-3-3/17635254)
 
 |**Pros**             |**Cons**                          |
+|---------------------|----------------------------------|
 |Very simple circuit  | Low efficiency                   |
 |Low cost	          | Generates heat                   |
 |Minimal external components | Not ideal for battery-powered systems|
@@ -67,6 +68,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM35DZ-NOPB/32489)
 
 |**Pros**             |**Cons**              |
+|---------------------|----------------------|
 | Simple analog output|	Requires ADC         |
 | Good accuracy	    | More noise sensitive |
 | Easy interface	    | Requires calibration |
@@ -74,6 +76,8 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 **Final Choice:** TC74A0-3.3VCT
 
 **Rationale:** The TC74 sensor was selected because it provides simple I2C communication, operates directly from a 3.3V supply, and has low power consumption, making it well suited for monitoring thermal conditions near the wireless electronics.
+
+For more details, review the [Appendix-Component Selection Process- Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module)
 
 ### Power Source
 
@@ -95,10 +99,11 @@ $4.99 / each
 
    ![](https://cdn-shop.adafruit.com/970x728/328-06.jpg)
 
-   * $14.95
+   * $14.95/each
    * [Link of Product](https://www.adafruit.com/product/328?srsltid=AfmBOooP7JS0PpX0v6VQ8-9dQ1CtpmQ5a4_LUi1XBD5sqMhyAZ_wtQyy)
 
 |**Pros**            |**Cons**                  |
+|--------------------|--------------------------|
 | Lightweight	      | Shorter lifespan         |
 | Rechargeable       | Requires protection circuitry|
 | Compact            | Higher cost              | 
@@ -106,6 +111,8 @@ $4.99 / each
 **Final Choice:** 18650 Lithium-Ion Battery
 
 **Rationale:** The 18650 lithium-ion battery provides high energy density, rechargeable operation, and sufficient current capacity to support the ESP32 and other electronics. This makes it well suited for portable embedded systems such as the subterranean rover.
+
+For more details, review the [Appendix-Component Selection Process- Power Source]()
 
 ### Wifi + Bluetooth
 
@@ -133,6 +140,7 @@ $4.99 / each
    * [Link of Product](https://www.sparkfun.com/wifi-module-esp8266-4mb-flash.html)
 
 |**Pros**          |**Cons**                 |
+|------------------|-------------------------|
 | Low cost	       | No Bluetooth            |
 | Large community support | Lower processing power|
 | Simple WiFi connectivity |	Fewer peripherals|
@@ -145,6 +153,7 @@ $4.99 / each
    * [Link to Product](https://www.sparkfun.com/nordic-nrf52840-ble-module-mdbt50q-1mv2.html)
 
 |**Pros**            |**Cons**            |
+|--------------------|--------------------|
 | Low power wireless	| Higher cost        |
 | Bluetooth support	| No integrated WiFi |
 | Good documentation | Smaller ecosystem  |
