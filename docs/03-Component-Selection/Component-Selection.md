@@ -18,7 +18,7 @@ The final major components chosen to establish dependable wireless communication
     * $1.98/each
     * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM3671MF-3-3-NOPB/1590062)
 
-    | Pros                                      | Cons                                                             |
+    | **Pros**                                  | **Cons**                                                         |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | High efficiency ( about greater than 90%) improves power efficiency and reduces heat generation | Switching noise requires careful PCB layout |
     | Handles ESP32 peak current during WiFi bursts | Requires inductor and external passives                      |
@@ -41,7 +41,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
     * $0.15/each
     * [link to product](https://www.digikey.com/en/products/detail/inolux/IN-P32ATB/7604878)
 
-    | Pros                                      | Cons                                                             |
+    | **Pros**                                  | **Cons**                                                         |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Compact surface-mount package             | Requires current-limiting resistor                               |
     | Low power comsumption                     | Limited brightness compared to larger LEDs                       |
@@ -49,8 +49,6 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
     | Provides visual system status indication  |
 
 **Rationale:** Status LEDs were included to provide visual feedback about system operation, including power status, communication activity, and diagnostic signals. The IN-P32ATB LED offers a small footprint, low current consumption, and compatibility with 3.3V logic, making it suitable for embedded system indicators.
-
-For more details, review the [Appendix-Component Selection Process-User Interface](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor)
 
 ### User Input
 
@@ -64,7 +62,7 @@ For more details, review the [Appendix-Component Selection Process-User Interfac
     * $0.40/each
     * [link to product](https://www.digikey.com/en/products/detail/c-k/PTS636SM43SMTR-LFS/10071723)
 
-    | Pros                                      | Cons                                                             |
+    | **Pros**                                  | **Cons**                                                         |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Compact surface-mount design              | Requires pull-up or pull-down resistor                           |
     | Reliable tactile feedback | Limited mechanical lifetime compared to larger switches                          |
@@ -72,8 +70,6 @@ For more details, review the [Appendix-Component Selection Process-User Interfac
     | Useful for testing and manual control input |
 
 **Rationale:** The push button switch allows manual user interaction with the wireless subsystem, such as initiating test communication events or resetting system functions. The selected tactile switch provides a compact surface-mount footprint and reliable actuation, making it well suited for embedded electronics in a constrained rover environment.
-
-For more details, review the [Appendix-Component Selection Process- User Input](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module)
       
 ### Wifi + Bluetooth
 
@@ -86,12 +82,12 @@ For more details, review the [Appendix-Component Selection Process- User Input](
     * $5.06/each
     * [link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Integrated Wifi and Bluetooth connectivity          | High current draw during wifi transmission                       |
-    | Large software ecosystem and community support | RF performance depends on antenna layout                    |
-    | Multiple GPIO pins for LEDs, sensors, and control | Requires careful RF PCB layout                            |
-    | Supports UART communication with rover controller | More complex firmware than the simple radios                    |
+    | **Pros**                                  | **Cons**                                                           |
+    | -----------------------------------------------| ------------------------------------------------------------- |
+    | Integrated Wifi and Bluetooth connectivity     | High current draw during wifi transmission                    |
+    | Large software ecosystem and community support | RF performance depends on antenna layout                      |
+    | Multiple GPIO pins for LEDs, sensors, and control | Requires careful RF PCB layout                             |
+    | Supports UART communication with rover controller | More complex firmware than the simple radios               |
 
 **Rationale:** The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi connectivity, processing capability, and multiple communication interfaces into a single surface-mount module, reducing PCB complexity. The module supports UART communication with the rover controller and WiFi communication with the MQTT server, allowing real-time telemetry transmission and command reception. Its extensive software ecosystem and development tools significantly reduce development risk.
 
@@ -103,13 +99,10 @@ For more details, review the [Appendix-Component Selection Process- Wifi+Bluetoo
 
 1. Custom connector interface to rover controller/ laptop
 
-    | Pros                                      | Cons                                                             |
+    | **Pros**                                  | **Cons**                                                         |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Simple and reliable serial communication  | Requires additional pins                                         |
     | Compatible with both ESP32 and PIC microcontrollers | Limited communication distance                         |
     | Low hardware complexity                   |                     
 
 **Rationale:** UART was selected as the communication interface between the wireless subsystem and the rover controller board. This protocol is widely supported by embedded systems and provides simple bidirectional communication using only two signal lines (TX and RX). It is ideal for transmitting telemetry data and receiving control commands from other rover subsystems.
-
-For more details, review the [Appendix-Component Selection Process- Communication Interface](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module)
-
