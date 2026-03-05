@@ -10,12 +10,12 @@ The final major components chosen to establish dependable wireless connection fo
 
 **3.3V Switching Voltage Regulator**
 
-1. TPS62162 Step-Down Buck Converter (Surface-Mount)
+1. Buck Switching Regulator IC Positive Fixed 3.3V (Surface-Mount)
 
-    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/108/920/296%7E4208210%7EDSG%7E8_sml.jpg)
+    ![](<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/1558fada-5f01-4d3a-b844-272d979f7099" />)
 
     * $1.98/each
-    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS62162DSGT/2782703)
+    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576HVS-3-3-NOPB/363648)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
