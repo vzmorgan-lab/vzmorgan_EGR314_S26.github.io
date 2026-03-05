@@ -631,15 +631,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#power-source" class="md-nav__link">
     <span class="md-ellipsis">
       Power Source
@@ -897,15 +888,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sensor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#power-source" class="md-nav__link">
     <span class="md-ellipsis">
       Power Source
@@ -1062,69 +1044,6 @@
 <p><strong>Final Choice:</strong> LM3671MF-3.3/NOPB</p>
 <p><strong>Rationale:</strong> The LM3671MF-3.3 switching regulator was selected because it provides high efficiency, supports the peak current requirements of the ESP32 WiFi module, and operates well from a battery input. Although switching regulators require additional passive components, the improved power efficiency is important for extending battery life in the rover system.</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">Appendix-Component Selection Process-Power Management</a> </p>
-<h3 id="sensor">Sensor</h3>
-<p><strong>Temperature Sensor</strong></p>
-<ol>
-<li>
-<p>TC74A0-3.3VCT</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg"></a></p>
-</li>
-<li>
-<p>$1.00 / each</p>
-</li>
-<li><a href="https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=17922795960&amp;gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&amp;gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI4xecToUI6zJUDKrKnRQKlIwXQnsmLM6Yfcl943HMkYQdVr3-PV1UaAg2TEALw_wcB">link to product</a></li>
-</ol>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Simple I2C interface</td>
-<td>Limited resolution</td>
-</tr>
-<tr>
-<td>Direct 3.3V operation</td>
-<td>Requires pull-up resistors</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>LM35DZ/NOPB</li>
-</ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/201/567/296%7EZ03A%7E%7E3_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/201/567/296%7EZ03A%7E%7E3_sml%28200x200%29.jpg"></a></p>
-<ul>
-<li>$1.67/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM35DZ-NOPB/32489">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Simple analog output</td>
-<td>Requires ADC</td>
-</tr>
-<tr>
-<td>Good accuracy</td>
-<td>More noise sensitive</td>
-</tr>
-<tr>
-<td>Easy interface</td>
-<td>Requires calibration</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Final Choice:</strong> TC74A0-3.3VCT</p>
-<p><strong>Rationale:</strong> The TC74 sensor was selected because it provides simple I2C communication, operates directly from a 3.3V supply, and has low power consumption, making it well suited for monitoring thermal conditions near the wireless electronics.</p>
-<p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module">Appendix-Component Selection Process- Sensor</a></p>
 <h3 id="power-source">Power Source</h3>
 <p><strong>Battery</strong></p>
 <ol>
