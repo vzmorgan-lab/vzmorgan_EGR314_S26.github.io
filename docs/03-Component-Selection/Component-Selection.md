@@ -34,7 +34,7 @@ The final major components chosen to establish dependable wireless communication
 
    |**Pros**                           |**Cons**                               |
    |-----------------------------------|---------------------------------------|
-   | Very simple design	              | Low efficiency                        |
+   | Very simple design	               | Low efficiency                        |
    | Requires few external components  | Generates significant heat            |
    | Low cost	                        | Not ideal for battery-powered systems |
 
@@ -56,41 +56,6 @@ The final major components chosen to establish dependable wireless communication
 **Rationale:** The LM3671MF-3.3 switching regulator was selected because it provides high efficiency, supports the peak current requirements of the ESP32 WiFi module, and operates well from a battery input. Although switching regulators require additional passive components, the improved power efficiency is important for extending battery life in the rover system.
 
 For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
-
-### Sensor
-
-**Temperature Sensor**
-
-1. TC74A0-3.3VCT
-
-    ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/223/402/150%7EC04-036%7EAT%7E5_sml%28200x200%29.jpg)
-
-   * $1.00 / each
-   * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI4xecToUI6zJUDKrKnRQKlIwXQnsmLM6Yfcl943HMkYQdVr3-PV1UaAg2TEALw_wcB)
-
-   |**Pros**               |**Cons**                   |
-   |-----------------------|---------------------------|
-   | Simple I2C interface  | Limited resolution        |
-   | Direct 3.3V operation | Requires pull-up resistors|
-
-2. LM35DZ/NOPB
-
-![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/201/567/296%7EZ03A%7E%7E3_sml%28200x200%29.jpg)
-
-   * $1.67/each
-   * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM35DZ-NOPB/32489)
-
-   |**Pros**             |**Cons**              |
-   |---------------------|----------------------|
-   | Simple analog output|	Requires ADC         |
-   | Good accuracy	    | More noise sensitive |
-   | Easy interface	    | Requires calibration |
-
-**Final Choice:** TC74A0-3.3VCT
-
-**Rationale:** The TC74 sensor was selected because it provides simple I2C communication, operates directly from a 3.3V supply, and has low power consumption, making it well suited for monitoring thermal conditions near the wireless electronics.
-
-For more details, review the [Appendix-Component Selection Process- Sensor](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module)
 
 ### Power Source
 
@@ -138,7 +103,7 @@ For more details, review the [Appendix-Component Selection Process- Power Source
     * $5.06/each
     * [link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639)
 
-    | **Pros**                                  | **Cons**                                                           |
+    | **Pros**                                       | **Cons**                                                      |
     | -----------------------------------------------| ------------------------------------------------------------- |
     | Integrated Wifi and Bluetooth connectivity     | High current draw during wifi transmission                    |
     | Large software ecosystem and community support | RF performance depends on antenna layout                      |
