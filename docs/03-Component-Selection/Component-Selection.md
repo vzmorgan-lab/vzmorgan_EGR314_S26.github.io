@@ -16,7 +16,7 @@ The final major components chosen to establish dependable wireless communication
     ![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/756/409/296%7E4073253-4%7EDBV%7E5_sml.jpg)
 
     * $1.98/each
-    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576HVS-3-3-NOPB/363648)
+    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM3671MF-3-3-NOPB/1590062)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
