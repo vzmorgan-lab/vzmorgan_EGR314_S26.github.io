@@ -56,7 +56,6 @@ $2.30 / each
 Option 1: LM3671MF-3.3/NOPB Switching Regulator
 
 # Rationale
-
 The LM3671MF-3.3 switching regulator was selected because it provides high power efficiency and stable voltage regulation for the ESP32 wireless module. WiFi communication can cause short bursts of high current demand, and the switching regulator can handle these loads without significant voltage drop or heat generation. This makes it ideal for a battery-powered embedded system such as the subterranean rover.
 
 # Sensor
@@ -95,7 +94,6 @@ $1.40 / each
 Option 1: TC74A0-3.3VCT Temperature Sensor
 
 # Rationale
-
 The TC74 temperature sensor was selected because it provides simple digital temperature measurement through the I2C interface while operating directly from a 3.3V supply. It consumes very little power and has a small surface-mount footprint, making it well suited for embedded monitoring of thermal conditions near the wireless electronics.
 
 # Wifi + Bluetooth Module
@@ -147,5 +145,4 @@ $2.55 / each
 Option 1: ESP32-S3-WROOM-1-N4 Wireless Module
 
 # Rationale
-
 The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi communication, Bluetooth connectivity, and a powerful microcontroller in a single surface-mount module. This significantly simplifies the system architecture by eliminating the need for a separate wireless transceiver and microcontroller. The module also provides extensive community support, libraries, and development tools that reduce development risk and speed up implementation.
