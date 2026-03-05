@@ -103,7 +103,7 @@ $4.99 / each
 | Rechargeable       | Requires protection circuitry|
 | Compact            | Higher cost              | 
 
-## Final Choice: 18650 Lithium-Ion Battery
+**Final Choice:** 18650 Lithium-Ion Battery
 
 **Rationale:** The 18650 lithium-ion battery provides high energy density, rechargeable operation, and sufficient current capacity to support the ESP32 and other electronics. This makes it well suited for portable embedded systems such as the subterranean rover.
 
@@ -149,7 +149,7 @@ $4.99 / each
 | Bluetooth support	| No integrated WiFi |
 | Good documentation | Smaller ecosystem  |
 
-## Final Choice: ESP32-S3-WROOM-1-N4
+**Final Choice:** ESP32-S3-WROOM-1-N4
 
 **Rationale:** The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi connectivity, processing capability, and multiple communication interfaces into a single surface-mount module, reducing PCB complexity. The module supports UART communication with the rover controller and WiFi communication with the MQTT server, allowing real-time telemetry transmission and command reception. Its extensive software ecosystem and development tools significantly reduce development risk.
 
