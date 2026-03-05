@@ -37,7 +37,7 @@ The final major components chosen to establish dependable wireless communication
 |Low cost	          | Generates heat                   |
 |Minimal external components | Not ideal for battery-powered systems|
 
-## Final Choice: LM3671MF-3.3/NOPB
+ **Final Choice:** LM3671MF-3.3/NOPB
 
 **Rationale:** The LM3671MF-3.3 switching regulator was selected because it provides high efficiency, supports the peak current requirements of the ESP32 WiFi module, and operates well from a battery input. Although switching regulators require additional passive components, the improved power efficiency is important for extending battery life in the rover system.
 
@@ -71,7 +71,7 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 | Good accuracy	    | More noise sensitive |
 | Easy interface	    | Requires calibration |
 
-## Final Choice: TC74A0-3.3VCT
+**Final Choice:** TC74A0-3.3VCT
 
 **Rationale:** The TC74 sensor was selected because it provides simple I2C communication, operates directly from a 3.3V supply, and has low power consumption, making it well suited for monitoring thermal conditions near the wireless electronics.
 
@@ -90,8 +90,6 @@ $4.99 / each
 |---------------------|----------------------------|
 | High energy density | Requires charging circuitry|
 | Rechargeable	       | Safety considerations      |
-
-**Rationale:** The 18650 lithium-ion battery was selected because it provides high energy density and rechargeable operation, making it suitable for portable embedded systems such as the Subterranian Rover.
 
 2. LiPo Battery Pack (3.7V)
 
