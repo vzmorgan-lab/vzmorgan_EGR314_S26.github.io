@@ -6,28 +6,28 @@ tags:
 ---
 
 ## Overview
-Written context needs to added!
+The wireless communication subsystem is designed to support a small embedded system built around the ESP32-WROOM-32 microcontroller module. The ESP32 serves as the primary controller for the system, managing onboard processing, wireless communication, and interaction with connected peripherals. Through its integrated WiFi capability, the ESP32 enables the rover system to communicate with an external control station or MQTT server for transmitting sensor data and receiving commands.
 
->Pick **ONLY** one of the two examples show below. **Remove** the other example. **REMOVE notations within the remaining section about being an example.**  
+The system is powered through a 9 V input supply, which is converted to a stable 3.3 V operating voltage using the LM2576HVS-3.3 switching voltage regulator. This regulator ensures that the ESP32 and other components receive a consistent and reliable voltage while improving efficiency compared to linear regulation. Supporting components such as capacitors, an inductor, a diode, and a fuse are included to provide voltage filtering, circuit protection, and proper switching regulator operation.
 
-## Bill of Materials (Example as Table)
+Additional elements in the design include LED indicators for visual system status feedback and push-button switches for manual control or reset functions. Connector headers are also provided to expose several ESP32 GPIO pins, allowing external sensors, actuators, or other modules to be connected to the system. Together, these components create a compact and reliable wireless communication platform suitable for integration into the rover’s control and monitoring system.
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+| **Part Name/Description**             | **Qty** | **Unit Cost** | **Total Cost** | **Manufacturer**  | **Manufacturer #** | **Vendor Link** | **Datasheet Link**     | **Schematic Reference Designators** |
+| ------------------------------------- | ------- | ------------- | -------------- | ----------------- | ------------------ | --------------- | ---------------------- | ----------------------------------- |
+| ESP32 WiFi Microcontroller Module     | 1       | —             | —              | Espressif         | ESP32-WROOM-32     | DigiKey         | Espressif Datasheet    | U1                                  |
+| 3.3V Buck Switching Voltage Regulator | 1       | —             | —              | Texas Instruments | LM2576HVS-3.3      | DigiKey         | TI Datasheet           | U3                                  |
+| Schottky Diode                        | 1       | —             | —              | —                 | 1N5822             | DigiKey         | Manufacturer Datasheet | D6                                  |
+| Inductor                              | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | L1                                  |
+| LED Indicator                         | 5       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | D1, D2, D3, D4, D5                  |
+| Resistors (1kΩ)                       | 5       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | R1, R2, R3, R4, R5                  |
+| Resistor (10kΩ)                       | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | R6                                  |
+| Capacitor 0.1 µF                      | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | C1                                  |
+| Capacitor 1000 µF                     | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | C2                                  |
+| Capacitor 1 µF                        | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | C3                                  |
+| Push Button Switch                    | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | SW1                                 |
+| Fuse                                  | 1       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | F1                                  |
+| Connector Header                      | 2       | —             | —              | —                 | —                  | DigiKey         | Manufacturer Datasheet | J3, J4                              |
 
-| **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | **Schematic Reference Designators** |
-|:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
-8-bit SIPO/SISO Shift Register, SOIC-16 package | 1 | $0.49 | $ 0.49 | NXP | 74HC595D,112 | [DigiKey](https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550) | [datasheet link](https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf) | U1 |
-0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package |10 | 0.2750 | $2.75 | KEMET | C0805F104K5RACTU | PRLTA 109 |n/a | C2, C4, C6, C7, C8, C9, C10, C11, C12, C16
-
-Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.
-
-* You could also import your BOM via a screenshot of the spreadsheet created BOM
-
-## Bill of Materials (Example as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure ##:** Example Bill of Materials as a screenshot.
-
-As you can see, the text can be difficult to read without opening the image.
 
 ## Resouce
 
