@@ -26,9 +26,7 @@ The overall team project focuses on designing and developing a subterranean rove
 
 The wireless communication subsystem plays a critical role in enabling the rover to transmit sensor data and receive commands from an external control station. This subsystem uses the ESP32-WROOM-32 to provide WiFi connectivity and communicate with a remote server using MQTT messaging protocols. Power regulation for the system is provided through a LM2576HVS-3.3 switching voltage regulator, which converts the input supply to the stable 3.3 V required by the ESP32 and supporting components.
 
-This datasheet focuses specifically on the design and implementation of the wireless communication circuitry. For a more detailed explanation of the overall rover architecture and the integration of all subsystems, readers can refer to the team project report linked within this document. 
-
-[team report.](https://egr314-s-2026-306.github.io/Team306.github.io/)
+This datasheet focuses specifically on the design and implementation of the wireless communication circuitry. For a more detailed explanation of the overall rover architecture and the integration of all subsystems, readers can refer to the [team project report link.](https://egr314-s-2026-306.github.io/Team306.github.io/)
 
 ### My Contribution
 
