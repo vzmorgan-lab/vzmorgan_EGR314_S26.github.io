@@ -31,4 +31,5 @@ Additional elements in the design include LED indicators for visual system statu
 
 ## Resouce
 
-The Bill of Material as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
+The Bill of Material as a PDF download is available [*here*](https://github.com/user-attachments/files/25811716/WirelessConnection_BOM.pdf)
+
