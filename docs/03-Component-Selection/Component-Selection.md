@@ -91,8 +91,6 @@ For more details, review the [Appendix-Component Selection Process-Power Managem
 
 **Rationale:** The 18650 lithium-ion battery provides high energy density, rechargeable operation, and sufficient current capacity to support the ESP32 and other electronics. This makes it well suited for portable embedded systems such as the subterranean rover.
 
-For more details, review the [Appendix-Component Selection Process- Power Source]()
-
 ### Wifi + Bluetooth
 
 **Wifi + Bluetooth Module**
