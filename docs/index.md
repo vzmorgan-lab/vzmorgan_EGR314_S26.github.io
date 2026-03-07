@@ -48,6 +48,6 @@ This datasheet is organized to help readers quickly locate relevant information 
 
 Together, these sections provide a clear overview of the subsystem design and allow readers to understand how the wireless communication module contributes to the overall rover system.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
+To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/04-BOM/BOM/) section of the datasheet.
 
 >Continue for all the remaining/missing sections.
