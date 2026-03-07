@@ -25,18 +25,19 @@ The final major components chosen to establish dependable wireless communication
     | Wide input voltage range supports battery input | More complex than Linear regulators                        |
     | Surface-mount compatible |
 
-### AMS1117-3.3 Linear Regulator
+### LM2576HVS-ADJ/NOPB
 
-![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/235/273/MFG_5272%7ESOT89-3%7E%7E3_sml%28200x200%29.jpg)
+![](https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/202/814/296%7E4200577-4%7EKTT%7E5_sml%28200x200%29.jpg)
 
-   * $0.50 / each
-   * [link to product](https://www.digikey.com/en/products/detail/evvo/AMS1117-3-3S/24370078?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DI2IhmWDFCgX9ksx3NhxcHgdUPOD4v7ir565-CsROMOD6mb5j4FEIEaAlsTEALw_wcB)
+   * $8.48 / each
+   * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2576HVS-ADJ-NOPB/270675)
 
    |**Pros**                           |**Cons**                               |
    |-----------------------------------|---------------------------------------|
-   | Very simple design	               | Low efficiency                        |
-   | Requires few external components  | Generates significant heat            |
-   | Low cost	                        | Not ideal for battery-powered systems |
+   | Simple and reliable switching regulator design  | Larger package compared to compact regulator  |
+   | HIgh current capability (up to 3A output)  | Higher cost than some alternatives     |
+   | Requires relatively few external component | Lower efficiency than newer regulators |
+   | Well-documented and widely used in power supply designs | LArger PCB footprint      |
 
 ### TPS62162 Buck Switching Regulator
 
@@ -51,9 +52,9 @@ The final major components chosen to establish dependable wireless communication
    | Good load transient response      | Requires additional external components |
    | Compact surface mount package	   |
 
- **Final Choice:** LM3671MF-3.3/NOPB
+ **Final Choice:** LM2576HVS-ADJ/NOPB
 
-**Rationale:** The LM3671MF-3.3 switching regulator was selected because it provides high efficiency, supports the peak current requirements of the ESP32 WiFi module, and operates well from a battery input. Although switching regulators require additional passive components, the improved power efficiency is important for extending battery life in the rover system.
+**Rationale:** The LM2576HVS-ADJ/NOPB was selected because of its high current capability, simple implementation, and proven reliability in power supply designs. While some modern regulators offer higher efficiency and smaller packages, the LM2576 provides stable voltage regulation with fewer design complications, making it easier to integrate into the rover system. Its ability to handle higher currents ensures the regulator can reliably power the ESP32 and other electronics during peak load conditions, which is critical for maintaining stable operation of the rover's communication and control systems.
 
 For more details, review the [Appendix-Component Selection Process-Power Management](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) 
 
