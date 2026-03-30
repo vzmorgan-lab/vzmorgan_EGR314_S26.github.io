@@ -965,15 +965,13 @@
 <li>Commands use simple 1/0 values for easy processing.</li>
 </ul>
 <p>Wireless Command — Message Types
-|---------------|-----------------|---------------|
 |               |Byte 2           |Byte 3         |
 |---------------|-----------------|---------------|
-|Variable Name  |Move Command     |Sensor Request |
+|Variable Name  |Move Start       |Sensor Start   |
 |Variable Type  |uint8_t          |uint8_t        |
 |Min Value      |0                |0              |
 |Max Value      |1                |1              |
-|Example        |1                |0              |
-|---------------|-----------------|---------------|</p>
+|Example        |1                |0              |</p>
 <h3 id="motor-start-byte-1">Motor Start (Byte 1)</h3>
 <ul>
 <li>0 = stop, 1 = start moving.</li>
