@@ -8,7 +8,7 @@ The wireless subsystem transmits messages between the operator, motor subsystem,
   * Commands use simple 1/0 values for easy processing.
 
 Wireless Command — Message Types
-|               |**Byte 2**       |**Byte 3**     |
+|**             |**Byte 2**       |**Byte 3**     |
 |---------------|-----------------|---------------|
 |Variable Name  |Move Start       |Sensor Start   |
 |Variable Type  |uint8_t          |uint8_t        |
