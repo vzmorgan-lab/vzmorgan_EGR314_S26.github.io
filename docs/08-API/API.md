@@ -7,7 +7,7 @@ The wireless subsystem transmits messages between the operator, motor subsystem,
   * Turn-based operation is maintained — only one device acts at a time.
   * Commands use simple 1/0 values for easy processing.
 
-Wireless Command — Simple Message Types
+Wireless Command — Message Types
 |               |Byte 2           |Byte 3         |
 |---------------|-----------------|---------------|
 |Variable Name  |Move Command     |Sensor Request |
