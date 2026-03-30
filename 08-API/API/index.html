@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -712,6 +717,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -721,6 +737,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-start-byte-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Start (Byte 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-start-byte-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Start (Byte 2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operation-done-byte-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operation Done (Byte 3)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -808,6 +877,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-start-byte-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Start (Byte 1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-start-byte-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor Start (Byte 2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operation-done-byte-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operation Done (Byte 3)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -829,13 +942,30 @@
   
 
 
-  <h1>API</h1>
-
-<ol>
-<li>Introduction</li>
-</ol>
-<p>Each subsystem has its own microcontroller and communicates using structured packets over a wireless connection (WiFi/Bluetooth/ESP-NOW). The human interface sends commands, the wireless subsystem forwards them, the motor subsystem executes movement/drilling commands, and the soil sensor subsystem takes measurements when requested and sends the results back through wireless to the operator.</p>
-<p>Wireless transmission does not alter the message format, byte types, or values. Each device uses the destination ID field to determine whether to process or ignore a message.</p>
+<h2 id="overview">Overview</h2>
+<p>The wireless subsystem transmits messages between the operator, motor subsystem, and sensor subsystem. The wireless connection broadcasts commands to all devices, but:</p>
+<ul>
+<li>Each device only acts on messages intended for it.</li>
+<li>Messages not addressed to a device or malformed are ignored.</li>
+<li>Turn-based operation is maintained — only one device acts at a time.</li>
+<li>Commands use simple 1/0 values for easy processing.</li>
+</ul>
+<p>Wireless Command — Simple Message Types
+|---------------|Byte 2-----------|Byte 3---------|
+|Variable Name--|Move Command-----|Sensor Request-|
+|Variable Type--|uint8_t----------|uint8_t--------|
+|Min Value------|0----------------|0--------------|
+|Max Value------|1----------------|1--------------|
+|Example--------|1----------------|0--------------|</p>
+<h1 id="motor-start-byte-1">Motor Start (Byte 1)</h1>
+<p>0 = stop, 1 = start moving.
+  Sent wirelessly from operator → motor subsystem.</p>
+<h1 id="sensor-start-byte-2">Sensor Start (Byte 2)</h1>
+<p>0 = idle, 1 = take sensor reading.
+  Sent wirelessly from operator → sensor subsystem.</p>
+<h1 id="operation-done-byte-3">Operation Done (Byte 3)</h1>
+<p>0 = in progress, 1 = completed.
+  Sent wirelessly from motor/sensor subsystem → operator.</p>
 
 
 
