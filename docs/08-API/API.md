@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 The wireless subsystem transmits messages between the operator, motor subsystem, and sensor subsystem. The wireless connection broadcasts commands to all devices, but:
 
@@ -7,8 +7,9 @@ The wireless subsystem transmits messages between the operator, motor subsystem,
   * Turn-based operation is maintained — only one device acts at a time.
   * Commands use simple 1/0 values for easy processing.
 
-Wireless Command — Message Types
-                |**Byte 2**       |**Byte 3**     |
+## Wireless Command — Message Types
+
+|** **          |**Byte 1**       |**Byte 2**     |
 |---------------|-----------------|---------------|
 |Variable Name  |Move Start       |Sensor Start   |
 |Variable Type  |uint8_t          |uint8_t        |
