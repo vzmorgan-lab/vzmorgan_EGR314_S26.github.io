@@ -9,6 +9,7 @@ The wireless subsystem transmits messages between the operator, motor subsystem,
 
 Wireless Command — Simple Message Types
 |---------------|Byte 2-----------|Byte 3---------|
+|---------------|-----------------|---------------|
 |Variable Name--|Move Command-----|Sensor Request-|
 |Variable Type--|uint8_t----------|uint8_t--------|
 |Min Value------|0----------------|0--------------|
