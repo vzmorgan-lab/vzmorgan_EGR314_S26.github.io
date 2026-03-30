@@ -26,7 +26,7 @@
 
     
       
-        <title>API - EGR 314 Vanessa Data Sheet</title>
+        <title>Overview - EGR 314 Vanessa Data Sheet</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API
+              Overview
             
           </span>
         </div>
@@ -716,12 +716,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    API
+    Overview
   </span>
   
 
@@ -732,7 +734,7 @@
         
   
   <span class="md-ellipsis">
-    API
+    Overview
   </span>
   
 
@@ -744,6 +746,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -752,13 +756,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#wireless-command-message-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Wireless Command — Message Types
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
+    <nav class="md-nav" aria-label="Wireless Command — Message Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -882,6 +886,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -890,13 +896,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#wireless-command-message-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Overview
+      Wireless Command — Message Types
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
+    <nav class="md-nav" aria-label="Wireless Command — Message Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -954,9 +960,7 @@
   
 
 
-  <h1>API</h1>
-
-<h2 id="overview">Overview</h2>
+<h1 id="overview">Overview</h1>
 <p>The wireless subsystem transmits messages between the operator, motor subsystem, and sensor subsystem. The wireless connection broadcasts commands to all devices, but:</p>
 <ul>
 <li>Each device only acts on messages intended for it.</li>
@@ -964,14 +968,43 @@
 <li>Turn-based operation is maintained — only one device acts at a time.</li>
 <li>Commands use simple 1/0 values for easy processing.</li>
 </ul>
-<p>Wireless Command — Message Types
-                |<strong>Byte 2</strong>       |<strong>Byte 3</strong>     |
-|---------------|-----------------|---------------|
-|Variable Name  |Move Start       |Sensor Start   |
-|Variable Type  |uint8_t          |uint8_t        |
-|Min Value      |0                |0              |
-|Max Value      |1                |1              |
-|Example        |1                |0              |</p>
+<h2 id="wireless-command-message-types">Wireless Command — Message Types</h2>
+<table>
+<thead>
+<tr>
+<th>** **</th>
+<th><strong>Byte 1</strong></th>
+<th><strong>Byte 2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Variable Name</td>
+<td>Move Start</td>
+<td>Sensor Start</td>
+</tr>
+<tr>
+<td>Variable Type</td>
+<td>uint8_t</td>
+<td>uint8_t</td>
+</tr>
+<tr>
+<td>Min Value</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Max Value</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 <h3 id="motor-start-byte-1">Motor Start (Byte 1)</h3>
 <ul>
 <li>0 = stop, 1 = start moving.</li>
