@@ -16,12 +16,12 @@ Wireless Command — Simple Message Types
 |Max Value      |1                |1              |
 |Example        |1                |0              |
 
-# Motor Start (Byte 1)
+### Motor Start (Byte 1)
   0 = stop, 1 = start moving.
   Sent wirelessly from operator → motor subsystem.
-# Sensor Start (Byte 2)
+### Sensor Start (Byte 2)
   0 = idle, 1 = take sensor reading.
   Sent wirelessly from operator → sensor subsystem.
-# Operation Done (Byte 3)
+### Operation Done (Byte 3)
   0 = in progress, 1 = completed.
   Sent wirelessly from motor/sensor subsystem → operator.
