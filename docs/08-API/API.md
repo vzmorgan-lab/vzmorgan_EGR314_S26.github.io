@@ -8,6 +8,7 @@ The wireless subsystem transmits messages between the operator, motor subsystem,
   * Commands use simple 1/0 values for easy processing.
 
 Wireless Command — Message Types
+|---------------|-----------------|---------------|
 |               |Byte 2           |Byte 3         |
 |---------------|-----------------|---------------|
 |Variable Name  |Move Command     |Sensor Request |
@@ -15,6 +16,7 @@ Wireless Command — Message Types
 |Min Value      |0                |0              |
 |Max Value      |1                |1              |
 |Example        |1                |0              |
+|---------------|-----------------|---------------|
 
 ### Motor Start (Byte 1)
   * 0 = stop, 1 = start moving.
