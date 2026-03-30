@@ -758,9 +758,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#motor-start-byte-1" class="md-nav__link">
     <span class="md-ellipsis">
       Motor Start (Byte 1)
@@ -768,8 +769,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#sensor-start-byte-2" class="md-nav__link">
     <span class="md-ellipsis">
       Sensor Start (Byte 2)
@@ -777,13 +778,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#operation-done-byte-3" class="md-nav__link">
     <span class="md-ellipsis">
       Operation Done (Byte 3)
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -890,9 +896,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#motor-start-byte-1" class="md-nav__link">
     <span class="md-ellipsis">
       Motor Start (Byte 1)
@@ -900,8 +907,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#sensor-start-byte-2" class="md-nav__link">
     <span class="md-ellipsis">
       Sensor Start (Byte 2)
@@ -909,13 +916,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#operation-done-byte-3" class="md-nav__link">
     <span class="md-ellipsis">
       Operation Done (Byte 3)
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -942,6 +954,8 @@
   
 
 
+  <h1>API</h1>
+
 <h2 id="overview">Overview</h2>
 <p>The wireless subsystem transmits messages between the operator, motor subsystem, and sensor subsystem. The wireless connection broadcasts commands to all devices, but:</p>
 <ul>
@@ -958,13 +972,13 @@
 |Min Value      |0                |0              |
 |Max Value      |1                |1              |
 |Example        |1                |0              |</p>
-<h1 id="motor-start-byte-1">Motor Start (Byte 1)</h1>
+<h3 id="motor-start-byte-1">Motor Start (Byte 1)</h3>
 <p>0 = stop, 1 = start moving.
   Sent wirelessly from operator → motor subsystem.</p>
-<h1 id="sensor-start-byte-2">Sensor Start (Byte 2)</h1>
+<h3 id="sensor-start-byte-2">Sensor Start (Byte 2)</h3>
 <p>0 = idle, 1 = take sensor reading.
   Sent wirelessly from operator → sensor subsystem.</p>
-<h1 id="operation-done-byte-3">Operation Done (Byte 3)</h1>
+<h3 id="operation-done-byte-3">Operation Done (Byte 3)</h3>
 <p>0 = in progress, 1 = completed.
   Sent wirelessly from motor/sensor subsystem → operator.</p>
 
