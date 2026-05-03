@@ -16,7 +16,7 @@ Overall, the schematic integrates power regulation, wireless communication, syst
 
 The image below shows the wireless communication schematic implemented in KiCad. The ESP32 module interfaces with external devices through its GPIO pins and communicates wirelessly with an MQTT server over WiFi. The regulated 3.3 V supply powers the ESP32 and supporting components, ensuring stable operation of the communication system.
 
-<img width="1214" height="836" alt="Screenshot 2026-03-06 223248" src="https://github.com/user-attachments/assets/a9fd713e-2767-4ac3-8619-b3e58a75a716" />
+<img width="1097" height="753" alt="Screenshot 2026-05-03 155334" src="https://github.com/user-attachments/assets/e287f5b0-3bd0-4a17-962a-5d2eb32035a5" />
 
 ## Resources
 
