@@ -21,5 +21,6 @@ The structure of the block diagram reflects a modular design approach, where pow
 
 The diagram shown below is the wireless connection for the Subterranian Rover.  
 
-<img width="954" height="701" alt="WirelessCommunication(Updated) drawio" src="https://github.com/user-attachments/assets/68480598-d5c9-433b-a1a4-4afd8c623d25" />
+<img width="931" height="701" alt="WC(update) drawio" src="https://github.com/user-attachments/assets/97d948c1-246c-4c12-9457-3ee38e05da9a" />
+
 
