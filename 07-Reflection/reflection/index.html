@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#reflection" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -797,6 +802,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reflection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -807,6 +825,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#review-of-modules-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review of Module’s Success
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller-module-startup-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller / Module Startup Tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -939,6 +1012,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#review-of-modules-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review of Module’s Success
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller-module-startup-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller / Module Startup Tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -961,9 +1080,47 @@
   
 
 
-  <h1>Reflection</h1>
-
-
+<h1 id="reflection">Reflection</h1>
+<h2 id="review-of-modules-success">Review of Module’s Success</h2>
+<p>Overall, the wireless communication subsystem successfully met its primary design requirements for enabling reliable data exchange between the subterranean rover and an external control station. The system was able to transmit sensor data and receive control commands using WiFi communication through the ESP32-WROOM-32, and the integration of MQTT messaging allowed structured and efficient communication between subsystems. The power regulation system using the LM2576HVS-3.3 successfully provided a stable 3.3 V rail, ensuring reliable operation under varying load conditions. One requirement that required refinement during development was improving system observability, which was resolved by replacing basic LED indicators with an OLED debugging display. Overall, the subsystem achieved stable wireless communication, functional power delivery, and effective debugging capability.</p>
+<hr>
+<h2 id="microcontroller-module-startup-tips">Microcontroller / Module Startup Tips</h2>
+<p>Several key lessons were learned during the initial setup and debugging of the subsystem:</p>
+<ol>
+<li>Ensure the ESP32 is powered with a stable 3.3 V supply before attempting WiFi initialization.</li>
+<li>Always verify ground continuity between all subsystem modules to prevent communication failures.</li>
+<li>Confirm correct I²C pin assignments (GPIO21 and GPIO22) before connecting the OLED display.</li>
+<li>Test UART communication separately before integrating with the full system.</li>
+<li>Use serial monitoring early in development to isolate firmware and hardware issues.</li>
+<li>Add pull-up resistors for I²C devices unless already included on the module.</li>
+<li>Avoid powering the ESP32 directly from unstable USB or unregulated sources.</li>
+<li>Verify MQTT broker connectivity before debugging higher-level communication logic.</li>
+<li>Implement incremental testing instead of full system integration from the start.</li>
+<li>Double-check pin conflicts between peripherals before final PCB design.</li>
+</ol>
+<hr>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<ol>
+<li>One of the most important lessons learned was how critical power regulation stability is for wireless embedded systems, especially during high-current WiFi transmission events.</li>
+<li>I learned how the ESP32 integrates multiple communication protocols (WiFi, UART, I²C) and how careful pin management is required to avoid conflicts.</li>
+<li>I gained experience designing systems that balance hardware simplicity with functional complexity, especially when choosing between LEDs and an OLED display for debugging.</li>
+<li>I learned how MQTT improves structured communication between distributed embedded systems.</li>
+<li>I improved my understanding of switching regulators and how component selection affects efficiency and stability.</li>
+<li>I learned the importance of modular system design to allow easier debugging and subsystem isolation.</li>
+<li>I developed stronger PCB design awareness, especially in routing power and communication lines.</li>
+<li>I learned how real-world debugging often requires both hardware and software troubleshooting simultaneously.</li>
+<li>I gained experience in translating system requirements into functional block diagrams and hardware architecture.</li>
+<li>I learned how iterative design feedback significantly improves final system reliability and performance.</li>
+</ol>
+<hr>
+<h2 id="recommendations-for-future-students">Recommendations for Future Students</h2>
+<ol>
+<li>Students should begin by thoroughly testing each subsystem individually before attempting full system integration, as this greatly reduces debugging time later in the project.</li>
+<li>It is important to carefully plan power distribution early in the design process to avoid instability issues during wireless communication.</li>
+<li>Students should become familiar with ESP32 pin mapping and peripheral conflicts before finalizing schematic and PCB designs.</li>
+<li>Using structured communication protocols such as MQTT early in development can simplify system integration and debugging.</li>
+<li>Future students should document every design decision during development, as this greatly improves the quality of the final report and reflection sections.</li>
+</ol>
 
 
 
