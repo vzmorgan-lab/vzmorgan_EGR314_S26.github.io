@@ -6,3 +6,4 @@ This is the updated front version of my final PCB design:
 This is the updated back version of my final PCB design:
 <img width="794" height="700" alt="Screenshot 2026-05-03 155315" src="https://github.com/user-attachments/assets/868160a2-fad4-4eb4-94df-ea6b46ca470e" />
 
+Gerber files is shown [here.]()
