@@ -653,18 +653,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lm2576hvs-adjnopb" class="md-nav__link">
+  <a href="#lm2596s-33nopb" class="md-nav__link">
     <span class="md-ellipsis">
-      LM2576HVS-ADJ/NOPB
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tps62162-buck-switching-regulator" class="md-nav__link">
-    <span class="md-ellipsis">
-      TPS62162 Buck Switching Regulator
+      LM2596S-3.3/NOPB
     </span>
   </a>
   
@@ -692,6 +683,15 @@
   <a href="#communication-interface" class="md-nav__link">
     <span class="md-ellipsis">
       Communication Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Interface
     </span>
   </a>
   
@@ -1002,18 +1002,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lm2576hvs-adjnopb" class="md-nav__link">
+  <a href="#lm2596s-33nopb" class="md-nav__link">
     <span class="md-ellipsis">
-      LM2576HVS-ADJ/NOPB
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tps62162-buck-switching-regulator" class="md-nav__link">
-    <span class="md-ellipsis">
-      TPS62162 Buck Switching Regulator
+      LM2596S-3.3/NOPB
     </span>
   </a>
   
@@ -1041,6 +1032,15 @@
   <a href="#communication-interface" class="md-nav__link">
     <span class="md-ellipsis">
       Communication Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging Interface
     </span>
   </a>
   
@@ -1077,51 +1077,14 @@
   <h1>Module's Selected Major Components</h1>
 
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
-<p>The final major components chosen to establish dependable wireless communication for the Subterranian Rover are described in the following sections. These components meet the embedded system’s surface-mount design requirements and power constraints while enabling reliable WiFi communication between the rover electronics and the external control station. The selected components support wireless data transmission using MQTT over WiFi, provide system power regulation, and include user interface indicators for system status and diagnostics.</p>
+<p>The final major components selected for the wireless communication subsystem support reliable data transmission, stable power delivery, and improved system-level debugging for the subterranean rover. These components were refined throughout the design process to align with system integration requirements, power constraints, and feedback received during development. The subsystem enables wireless communication with a remote control station using MQTT over WiFi, while also supporting wired communication with other rover subsystems and providing real-time debugging feedback through an onboard display.</p>
 <h3 id="power-management">Power Management</h3>
 <p><strong>3.3V Switching Voltage Regulator</strong></p>
-<ol>
-<li>
-<p>Buck Switching Regulator IC Positive Fixed 3.3V (Surface-Mount)
-   LM3671MF-3.3/NOPB</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/756/409/296%7E4073253-4%7EDBV%7E5_sml.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/756/409/296%7E4073253-4%7EDBV%7E5_sml.jpg"></a></p>
+<h3 id="lm2596s-33nopb">LM2596S-3.3/NOPB</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/251/656/MFG_296%7E4200577-4%7EKTT%7E5_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/003/251/656/MFG_296%7E4200577-4%7EKTT%7E5_sml%28200x200%29.jpg"></a></p>
 <ul>
-<li>$1.98/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM3671MF-3-3-NOPB/1590062">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>High efficiency ( about greater than 90%) improves power efficiency and reduces heat generation</td>
-<td>Switching noise requires careful PCB layout</td>
-</tr>
-<tr>
-<td>Handles ESP32 peak current during WiFi bursts</td>
-<td>Requires inductor and external passives</td>
-</tr>
-<tr>
-<td>Wide input voltage range supports battery input</td>
-<td>More complex than Linear regulators</td>
-</tr>
-<tr>
-<td>Surface-mount compatible</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<h3 id="lm2576hvs-adjnopb">LM2576HVS-ADJ/NOPB</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/202/814/296%7E4200577-4%7EKTT%7E5_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/202/814/296%7E4200577-4%7EKTT%7E5_sml%28200x200%29.jpg"></a></p>
-<ul>
-<li>$8.48 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2576HVS-ADJ-NOPB/270675">link to product</a></li>
+<li>$7.18 / each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-3-3-NOPB/363704?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=9265913509&amp;gbraid=0AAAAADrbLlj3xs4UbSWPRhxAYtzibYndB&amp;gclid=CjwKCAjw5NvPBhAoEiwA_2egflJdngoicV4xFI1DlxoIQZ_o1QBQ-Qoijo-tjerjWbnI-r_JC2vjpBoCxLkQAvD_BwE">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1136,7 +1099,7 @@
 <td>Larger package compared to compact regulator</td>
 </tr>
 <tr>
-<td>HIgh current capability (up to 3A output)</td>
+<td>High current capability (up to 3A output)</td>
 <td>Higher cost than some alternatives</td>
 </tr>
 <tr>
@@ -1145,52 +1108,32 @@
 </tr>
 <tr>
 <td>Well-documented and widely used in power supply designs</td>
-<td>LArger PCB footprint</td>
+<td>Larger PCB footprint</td>
+</tr>
+<tr>
+<td>Wide input voltage range (4.5V-40V)</td>
+<td>Produces output ripple/noise compared to modern regulators</td>
+</tr>
+<tr>
+<td>Easy to us in DIY and prebuilt modules</td>
+<td>Less efficient when stepping down from high voltages</td>
 </tr>
 </tbody>
 </table>
-<h3 id="tps62162-buck-switching-regulator">TPS62162 Buck Switching Regulator</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/108/920/296%7E4208210%7EDSG%7E8_sml.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/108/920/296%7E4208210%7EDSG%7E8_sml.jpg"></a></p>
-<ul>
-<li>$2.30 / each</li>
-<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS62162QDSGTQ1/8106150?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=17922795960&amp;gbraid=0AAAAADrbLliDAFBPIpsEES-o8UC2Dme-g&amp;gclid=Cj0KCQiA8KTNBhD_ARIsAOvp6DLx5XmkVX2FrJnzuIlevHkoFduS_uO5RTDUoJW4m4uVXjfv4GV_AdMaAkc4EALw_wcB">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>High efficiency</td>
-<td>Slightly higher cost</td>
-</tr>
-<tr>
-<td>Good load transient response</td>
-<td>Requires additional external components</td>
-</tr>
-<tr>
-<td>Compact surface mount package</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Final Choice:</strong> LM2576HVS-ADJ/NOPB</p>
-<p><strong>Rationale:</strong> The LM2576HVS-ADJ/NOPB was selected because of its high current capability, simple implementation, and proven reliability in power supply designs. While some modern regulators offer higher efficiency and smaller packages, the LM2576 provides stable voltage regulation with fewer design complications, making it easier to integrate into the rover system. Its ability to handle higher currents ensures the regulator can reliably power the ESP32 and other electronics during peak load conditions, which is critical for maintaining stable operation of the rover's communication and control systems.</p>
+<p><strong>Final Choice:</strong> LM2576HVS-3.3V/NOPB</p>
+<p><strong>Rationale:</strong>The LM2576HVS-3.3 was selected for its reliability, high current capability, and ease of implementation. It provides a stable 3.3 V output required by the ESP32 and peripheral devices, ensuring consistent operation during peak loads such as WiFi transmission. While more modern regulators exist, this device offers a robust and well-documented solution that simplifies integration into the rover’s power system.</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">Appendix-Component Selection Process-Power Management</a> </p>
 <h3 id="power-source">Power Source</h3>
 <p><strong>Battery</strong></p>
 <ol>
 <li>
-<p>18650 Lithium-Ion Battery</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.18650batterystore.com/cdn/shop/files/52q45634564526.jpg?v=1738986702&amp;width=900" data-desc-position="bottom"><img alt="" src="https://www.18650batterystore.com/cdn/shop/files/52q45634564526.jpg?v=1738986702&amp;width=900"></a></p>
+<p>5V External Input (Barrel Jack Interface)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/194/516/MFG_PJ-007_sml%28200x200%29.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/001/194/516/MFG_PJ-007_sml%28200x200%29.jpg"></a></p>
 </li>
 <li>
-<p>$4.99 / each</p>
+<p>$0.73 / each</p>
 </li>
-<li><a href="https://www.18650batterystore.com/products/samsung-25r-18650">link to product</a></li>
+<li><a href="https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices-/PJ-007/263523?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=17336967819&amp;gbraid=0AAAAADrbLlj4e2rkxYeNE6Sysj6X7B6l9&amp;gclid=Cj0KCQjw1ZjOBhCmARIsADDuFTCADD1jQP-6756QURgUNsW43VM7cNSta41hyIuoQc7dlILhTU_IFmIaAqB-EALw_wcB">link to product</a></li>
 </ol>
 <table>
 <thead>
@@ -1201,56 +1144,30 @@
 </thead>
 <tbody>
 <tr>
-<td>High energy density</td>
-<td>Requires charging circuitry</td>
+<td>Simple and reliable power input method</td>
+<td>Requires external regulated source</td>
 </tr>
 <tr>
-<td>Rechargeable</td>
-<td>Safety considerations</td>
+<td>Easily replaceable and test-friendly</td>
+<td>Less portable than battery-only systems</td>
+</tr>
+<tr>
+<td>Compatible with lab power supplies</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<ol>
-<li>LiPo Battery Pack (3.7V)</li>
-</ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://cdn-shop.adafruit.com/970x728/328-06.jpg" data-desc-position="bottom"><img alt="" src="https://cdn-shop.adafruit.com/970x728/328-06.jpg"></a></p>
-<ul>
-<li>$14.95/each</li>
-<li><a href="https://www.adafruit.com/product/328?srsltid=AfmBOooP7JS0PpX0v6VQ8-9dQ1CtpmQ5a4_LUi1XBD5sqMhyAZ_wtQyy">Link of Product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lightweight</td>
-<td>Shorter lifespan</td>
-</tr>
-<tr>
-<td>Rechargeable</td>
-<td>Requires protection circuitry</td>
-</tr>
-<tr>
-<td>Compact</td>
-<td>Higher cost</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Final Choice:</strong> 18650 Lithium-Ion Battery</p>
-<p><strong>Rationale:</strong> The 18650 lithium-ion battery provides high energy density, rechargeable operation, and sufficient current capacity to support the ESP32 and other electronics. This makes it well suited for portable embedded systems such as the subterranean rover.</p>
+<p><strong>Final Choice:</strong> 5V External Input (Barrel Jack Interface)</p>
+<p><strong>Rationale:</strong> A barrel jack power interface was selected to provide a stable and accessible input power source during development and testing. This allows the subsystem to be powered from regulated lab supplies or external adapters, improving reliability and simplifying debugging compared to battery-only operation.</p>
 <h3 id="wifi-bluetooth">Wifi + Bluetooth</h3>
 <p><strong>Wifi + Bluetooth Module</strong></p>
 <ol>
 <li>
-<p>ESP32-S3-WROOM-1-N4 (Surface-Mount RF Module)</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/773/504/MFG_Attachment-2-ESP32-S3-WROOM-1_sml.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/300/773/504/MFG_Attachment-2-ESP32-S3-WROOM-1_sml.jpg"></a></p>
+<p>ESP32-WROOM-32-N8</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/302/ESP32-WROOM-32-%288MB%29_View1_sml.jpg" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/010/302/ESP32-WROOM-32-%288MB%29_View1_sml.jpg"></a></p>
 <ul>
 <li>$5.06/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">link to product</a></li>
+<li><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-WROOM-32-N8/9381712">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1261,90 +1178,30 @@
 </thead>
 <tbody>
 <tr>
-<td>Integrated Wifi and Bluetooth connectivity</td>
+<td>Integrated Wifi and processing</td>
 <td>High current draw during wifi transmission</td>
 </tr>
 <tr>
-<td>Large software ecosystem and community support</td>
-<td>RF performance depends on antenna layout</td>
+<td>Supports MQTT Communication</td>
+<td>Requires careful power design</td>
 </tr>
 <tr>
-<td>Multiple GPIO pins for LEDs, sensors, and control</td>
-<td>Requires careful RF PCB layout</td>
+<td>Multiple GPIO interfaces (UART, I²C, GPIO)</td>
+<td>RF performance depends on layout</td>
 </tr>
 <tr>
-<td>Supports UART communication with rover controller</td>
-<td>More complex firmware than the simple radios</td>
+<td>LArge development ecosystem</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </li>
-<li>
-<p>ESP8266 (4MB Flash)</p>
-</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/7/17146-WiFi_Module_-_ESP8266__4MB_-01.jpg" data-desc-position="bottom"><img alt="" src="https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/1/7/17146-WiFi_Module_-_ESP8266__4MB_-01.jpg"></a></p>
-<ul>
-<li>$7.50/each</li>
-<li><a href="https://www.sparkfun.com/wifi-module-esp8266-4mb-flash.html">Link of Product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Low cost</td>
-<td>No Bluetooth</td>
-</tr>
-<tr>
-<td>Large community support</td>
-<td>Lower processing power</td>
-</tr>
-<tr>
-<td>Simple WiFi connectivity</td>
-<td>Fewer peripherals</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>NRF52840 Module</li>
-</ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/2/1/21605-_WRL-_01.jpg" data-desc-position="bottom"><img alt="" src="https://www.sparkfun.com/media/catalog/product/cache/a793f13fd3d678cea13d28206895ba0c/2/1/21605-_WRL-_01.jpg"></a></p>
-<ul>
-<li>$7.00 / each</li>
-<li><a href="https://www.sparkfun.com/nordic-nrf52840-ble-module-mdbt50q-1mv2.html">Link to Product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Low power wireless</td>
-<td>Higher cost</td>
-</tr>
-<tr>
-<td>Bluetooth support</td>
-<td>No integrated WiFi</td>
-</tr>
-<tr>
-<td>Good documentation</td>
-<td>Smaller ecosystem</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Final Choice:</strong> ESP32-S3-WROOM-1-N4</p>
-<p><strong>Rationale:</strong> The ESP32-S3-WROOM-1-N4 module was selected because it integrates WiFi connectivity, processing capability, and multiple communication interfaces into a single surface-mount module, reducing PCB complexity. The module supports UART communication with the rover controller and WiFi communication with the MQTT server, allowing real-time telemetry transmission and command reception. Its extensive software ecosystem and development tools significantly reduce development risk.</p>
+<p><strong>Final Choice:</strong> ESP32-WROOM-32-N8</p>
+<p><strong>Rationale:</strong> The ESP32-WROOM-32 was selected as the central controller due to its integrated WiFi capability and support for MQTT-based communication, eliminating the need for an external communication module. It supports multiple communication interfaces, allowing seamless integration with rover subsystems via UART and with the debugging display via I²C.</p>
 <p>For more details, review the <a href="https://vzmorgan-lab.github.io/vzmorgan_EGR314_S26.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/#wifi-bluetooth-module">Appendix-Component Selection Process- Wifi+Bluetooth Module</a></p>
 <h3 id="communication-interface">Communication Interface</h3>
-<p><strong>Digital Serial Communication Connection</strong></p>
+<p><strong>UART Serial Communication</strong></p>
 <ol>
 <li>
 <p>Custom connector interface to rover controller/ laptop</p>
@@ -1357,22 +1214,54 @@
 </thead>
 <tbody>
 <tr>
-<td>Simple and reliable serial communication</td>
-<td>Requires additional pins</td>
+<td>Simple and reliable communication</td>
+<td>Limited distance</td>
 </tr>
 <tr>
-<td>Compatible with both ESP32 and PIC microcontrollers</td>
-<td>Limited communication distance</td>
+<td>Widely supported across microcontrollers</td>
+<td>Requires dedicated pins</td>
 </tr>
 <tr>
-<td>Low hardware complexity</td>
+<td>Low implementation complexity</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> UART was selected as the communication interface between the wireless subsystem and the rover controller board. This protocol is widely supported by embedded systems and provides simple bidirectional communication using only two signal lines (TX and RX). It is ideal for transmitting telemetry data and receiving control commands from other rover subsystems.</p>
+<h3 id="debugging-interface">Debugging Interface</h3>
+<ol>
+<li>SSD1306 OLED Display</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2642/MFG_OLED-128x64-0.96-I2C.jpg?hidebanner=true" data-desc-position="bottom"><img alt="" src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2642/MFG_OLED-128x64-0.96-I2C.jpg?hidebanner=true"></a></p>
+<ul>
+<li>$4.99/ each</li>
+<li><a href="https://www.digikey.com/en/products/detail/canaduino-/26095/16822116?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20228387720&amp;gbraid=0AAAAADrbLlhpQ4d9FArsR6uA83jTMT7J0&amp;gclid=CjwKCAjw5NvPBhAoEiwA_2egfk7zlAVK1k0b8f6uiH7KLjBmWb7mtO4CJhif04-advz03sf9HDDLVRoC_2AQAvD_BwE">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Provides detailed real-time feedback</td>
+<td>Slightly higher complexity than LEDs</td>
+</tr>
+<tr>
+<td>Reduces need for multiple indicator LEDs</td>
+<td>Requires I²C configuration</td>
+</tr>
+<tr>
+<td>Improves debugging and observability</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Final Choice:</strong> SSD1306 OLED Display (I²C)</p>
+<p><strong>Rationale:</strong> The OLED display was added as a design improvement to replace traditional LED indicators and provide more detailed system feedback. It displays real-time debugging information such as WiFi connection status, MQTT activity, and message transmission events. This significantly improves system observability and simplifies troubleshooting during development and testing. </p>
 
 
 
