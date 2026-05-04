@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hardware-v20" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -930,6 +935,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    HardwareV2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -939,6 +955,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#hardware-v20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware V2.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1072,6 +1114,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#hardware-v20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware V2.0
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1095,7 +1154,11 @@
 
   <h1>HardwareV2</h1>
 
-
+<h2 id="hardware-v20">Hardware V2.0</h2>
+<p>If a Version 2.0 of the wireless communication subsystem were developed, several improvements would be made to enhance reliability, efficiency, and system robustness. The current design uses the LM2576HVS-3.3, which provides stable power but could be replaced with a more efficient, compact regulator to reduce noise and improve performance during high-current WiFi transmission from the ESP32-WROOM-32.</p>
+<p>PCB layout improvements would include better grounding, cleaner routing, and separation of power and communication lines to reduce interference. Communication reliability could also be improved by adding message buffering and validation to prevent data loss during high system activity.</p>
+<p>The SSD1306 OLED display currently provides useful debugging information, but a more structured interface with error messages, signal strength, and system status would improve usability. Additionally, stronger connectors or a modular interface would improve integration with other subsystems. Adding voltage or current monitoring would further increase system reliability by detecting power issues early.</p>
+<p>Overall, Version 2.0 would focus on improving efficiency, signal integrity, debugging capability, and system stability while maintaining the functionality achieved in the current design.</p>
 
 
 
