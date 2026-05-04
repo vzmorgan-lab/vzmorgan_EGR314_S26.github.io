@@ -100,11 +100,11 @@ For more details, review the [Appendix-Component Selection Process- Wifi+Bluetoo
    * $4.99/ each
    * [link to product](https://www.digikey.com/en/products/detail/canaduino-/26095/16822116?gclsrc=aw.ds&gad_source=1&gad_campaignid=20228387720&gbraid=0AAAAADrbLlhpQ4d9FArsR6uA83jTMT7J0&gclid=CjwKCAjw5NvPBhAoEiwA_2egfk7zlAVK1k0b8f6uiH7KLjBmWb7mtO4CJhif04-advz03sf9HDDLVRoC_2AQAvD_BwE)
 
- | **Pros**                                     | **Cons**                               |
-    | ----------------------------------------- | -------------------------------------- |
-    | Provides detailed real-time feedback      | Slightly higher complexity than LEDs   |
-    | Reduces need for multiple indicator LEDs  | Requires I²C configuration             |
-    | Improves debugging and observability      |
+ | **Pros**                                  | **Cons**                               |
+ | ----------------------------------------- | -------------------------------------- |
+ | Provides detailed real-time feedback      | Slightly higher complexity than LEDs   |
+ | Reduces need for multiple indicator LEDs  | Requires I²C configuration             |
+ | Improves debugging and observability      |
     
 **Final Choice:** SSD1306 OLED Display (I²C)
 
