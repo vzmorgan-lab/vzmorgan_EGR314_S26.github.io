@@ -4,13 +4,9 @@ title: Module Schematic
 
 ## Overview
 
-This schematic supports a wireless embedded system built around the ESP32-WROOM-32 microcontroller module. The ESP32 functions as the primary controller for the system, performing onboard processing, managing WiFi communication, and interfacing with external peripherals. The design enables the ESP32 to transmit and receive data wirelessly, allowing the rover system to communicate with an external server using MQTT over WiFi.
+The wireless communication subsystem is designed around the ESP32-WROOM-32, which serves as the central controller for processing, wireless communication, and peripheral interfacing. Through its integrated WiFi capability, the ESP32 enables communication with an external MQTT server, allowing the rover to transmit sensor data and receive control commands in real time. The system is powered through an external DC input, including both a barrel jack and USB interface, which is stepped down to a stable 3.3 V supply using the LM2576HVS-3.3. Supporting components such as an inductor, Schottky diode, capacitors, and a fuse ensure proper regulation, filtering, and circuit protection for reliable operation.
 
-Power for the circuit is supplied through a 9 V input source, which is regulated down to 3.3 V using the LM2576HVS-3.3 buck switching voltage regulator. This regulator provides a stable voltage required for proper ESP32 operation and helps maintain reliable system performance. Supporting power components, including a Schottky diode, fuse, inductor, and filtering capacitors, are included to improve efficiency, protect the circuit, and reduce voltage ripple.
-
-Additional components are included to improve system usability and monitoring. Several LED indicators provide visual feedback for power and system status, while a push-button switch allows manual control or reset functionality. The schematic also includes connector headers that expose multiple ESP32 GPIO pins, allowing sensors, actuators, or other external devices to be connected easily. UART pins are available for programming and debugging the ESP32 during development.
-
-Overall, the schematic integrates power regulation, wireless communication, system control, and peripheral connectivity into a compact embedded design suitable for the rover’s wireless communication subsystem.
+A key feature of the final design is the inclusion of an SSD1306 OLED display connected via the I²C interface (GPIO21 and GPIO22), which provides real-time debugging and system feedback such as communication status and message activity. A push-button switch is included for manual control and system interaction, while connector headers expose UART (TX/RX) and GPIO pins for integration with other rover subsystems. Together, these elements create a robust, modular, and easily debuggable wireless communication platform that meets the rover’s requirements for reliable data transmission, power stability, and system observability.
 
 ## Wireless Connection Schematic
 
