@@ -16,5 +16,5 @@ The image below shows the wireless communication schematic implemented in KiCad.
 
 ## Resources
 
-The schematic as a PDF download is available [*Here*](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/main/WirelessConnection_1.pdf), and the Zip folder of the project [Wireless Connection Zip File](https://github.com/user-attachments/files/25811621/WirelessConnection_1-2026-03-06_221520.zip)
+The schematic as a PDF download is available [*Here*](https://github.com/vzmorgan-lab/vzmorgan_EGR314_S26.github.io/blob/main/WirelessConnection_1.pdf), and the Zip folder of the project [Wireless Connection Zip File]()
 
